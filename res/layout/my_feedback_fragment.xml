@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent_selector" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="20.0dip" />
+    <ProgressBar android:id="@id/progressbar" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse" />
+</RelativeLayout>

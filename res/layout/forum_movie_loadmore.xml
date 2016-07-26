@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="54.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/loadmore_root" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/movie_alt_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi1" android:gravity="center" android:id="@id/movie_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_loading" />
+            <ProgressBar android:id="@id/movie_loading_bar" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ss_progressbar" style="?android:attr/progressBarStyleSmall" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi1" android:layout_gravity="center" android:id="@id/movie_load_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/look_more" android:drawableRight="@drawable/seemore_all" android:drawablePadding="4.0dip" />
+    </FrameLayout>
+</LinearLayout>

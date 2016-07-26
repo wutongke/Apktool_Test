@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/pull_to_refresh_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_pull_label" android:layout_centerInParent="true" style="@style/pull_to_refresh_text" />
+    <ProgressBar android:id="@id/pull_to_refresh_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="20.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/ssl_progressbar_pull_to_refresh" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+    <ImageView android:id="@id/pull_to_refresh_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/pulltorefresh_arrow" android:layout_centerVertical="true" />
+</RelativeLayout>

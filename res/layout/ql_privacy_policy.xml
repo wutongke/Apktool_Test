@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ql_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/waiting_lay" android:padding="@dimen/ql_privacy_policy_linearsed_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/ql_black" android:gravity="center" android:id="@id/privacy_policy_textview_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ql_policy_loading" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/content_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:textAppearance="?android:textAppearanceSmall" android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/retry_lay" android:padding="@dimen/ql_privacy_policy_linearfour_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/ql_black" android:gravity="center" android:id="@id/privacy_policy_textview_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ql_no_connection" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/Btn_retry_lay" android:paddingTop="@dimen/ql_privacy_policy_linearfive_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:layout_width="@dimen/ql_privacy_policy_viewfirst_width" android:layout_height="fill_parent" android:layout_weight="4.0" />
+                <Button android:id="@id/Btn_retry" android:text="@string/ql_btn_ok" android:layout_weight="25.0" style="@style/ql_HoloButtonStyle" />
+                <View android:layout_width="@dimen/ql_privacy_policy_viewsed_width" android:layout_height="fill_parent" android:layout_weight="4.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

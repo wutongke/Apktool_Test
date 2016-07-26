@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/section_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_margin">
+        <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi1" android:id="@id/section_title_tv" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+        <View android:background="@color/ssxinxian2" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_alignRight="@id/section_title_tv" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/mian4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/section_title_layout">
+        <View android:id="@id/top_divider_line" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <include android:id="@id/answer_list_item_base" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_divider_line" layout="@layout/answer_list_item_base" />
+        <View android:id="@id/bottom_divider_line" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="14.0dip" android:layout_below="@id/answer_list_item_base" />
+    </RelativeLayout>
+</RelativeLayout>

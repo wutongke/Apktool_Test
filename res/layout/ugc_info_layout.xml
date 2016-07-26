@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ugc_info_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/ugc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ugc_label_style" />
+    <com.ss.android.article.base.ui.DiggLayout android:id="@id/digg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ugc_label" android:layout_centerVertical="true" app:type="listType" app:minimumWidth="30.0dip" app:dl_txtsize="11.0sp" app:dl_drawablePadding="3.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ssxinzi9" android:id="@id/comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="75.0dip" android:drawableLeft="@drawable/comment_icon_selector" android:drawablePadding="3.0dip" android:layout_alignLeft="@id/digg" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/ssxinzi9" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

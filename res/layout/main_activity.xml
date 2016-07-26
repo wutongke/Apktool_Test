@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.common.view.SSTabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/realtabcontent" android:paddingBottom="@dimen/tab_bar_height" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/main_top_video_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/top_category_height" android:layout_marginBottom="@dimen/tab_bar_height" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+        <TabWidget android:orientation="horizontal" android:id="@android:id/tabs" android:background="@drawable/tabs_bg" android:layout_width="fill_parent" android:layout_height="@dimen/tab_bar_height" android:layout_alignParentBottom="true" android:showDividers="none" />
+    </RelativeLayout>
+    <SurfaceView android:id="@id/hack_surface_view_flicker" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/concern_guide_viewstub" android:layout="@layout/concern_guide_layout" android:inflatedId="@id/concern_guide_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:layout_gravity="bottom" android:id="@id/video_tab_guide_viewstub" android:layout="@layout/concern_guide_layout" android:inflatedId="@id/video_tab_guide_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.ss.android.article.common.view.SSTabHost>

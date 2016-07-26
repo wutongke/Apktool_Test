@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ql_transparent" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/xh_dialog_backgroud" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/top_switch" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+            <ImageView android:id="@id/xh_back" android:background="@drawable/xh_ic_arrow_left" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ql_quick_login_title" android:id="@id/text_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/xh_switch_user" android:layout_toRightOf="@id/xh_back" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/setting" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/setting_plus" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="15.0dip" android:scaleType="fitXY" android:layout_toLeftOf="@id/setting" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/setting_plus_hind" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divide_line_switch" android:background="@color/ql_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:scaleType="fitXY" android:layout_below="@id/top_switch" />
+        <RelativeLayout android:id="@id/switch_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divide_line_switch">
+            <ListView android:id="@id/list_sub_acc" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/xh_item_click_selector" android:divider="@color/ql_divide" android:dividerHeight="1.0px" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divide_line1_switch" android:background="@color/ql_divide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:scaleType="fitXY" android:layout_below="@id/switch_body" />
+        <RelativeLayout android:id="@id/switch_footer2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/divide_line1_switch">
+            <ImageView android:id="@id/use_game_account" android:background="@drawable/ql_enter_game_account" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="20.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/ql_switch_footer_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/xh_use_old_game_sub" android:layout_toRightOf="@id/use_game_account" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

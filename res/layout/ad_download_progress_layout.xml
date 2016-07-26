@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ad_download_progress_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/ad_download_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/ad_download_status" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/ad_download_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+    <ProgressBar android:id="@id/ad_download_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:max="100" android:layout_below="@id/ad_download_size" style="@style/ad_download_progress_bar" />
+</RelativeLayout>

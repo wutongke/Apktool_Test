@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/popup_layout_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/follow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_action_follow" style="@style/base_pop_text" />
+    <ImageView android:id="@id/line_1" android:background="@color/fengexian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:id="@id/block" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_action_block" style="@style/base_pop_text" />
+    <ImageView android:id="@id/line_2" android:background="@color/fengexian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:id="@id/report" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_action_report" style="@style/base_pop_text" />
+    <ImageView android:id="@id/line_3" android:background="@color/fengexian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:id="@id/delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_action_delete" style="@style/base_pop_text" />
+    <ImageView android:id="@id/line_4" android:background="@color/fengexian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:id="@id/manage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_action_manage" style="@style/base_pop_text" />
+</LinearLayout>

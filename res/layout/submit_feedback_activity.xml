@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/submit_feedback_fragment_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/feedback_title_bar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/content_layout" android:background="@drawable/bg_feedback_content" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="7.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip">
+                <EditText android:gravity="center|left|top" android:id="@id/content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:hint="@string/info_input_content" android:layout_weight="1.0" style="@style/feedback_input_text" />
+                <ImageView android:id="@id/image_btn" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/feedback_upload_icon" android:scaleType="fitXY" />
+            </LinearLayout>
+            <EditText android:id="@id/contact" android:background="@drawable/bg_feedback_contact" android:paddingLeft="10.0dip" android:paddingTop="7.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="8.0dip" android:hint="@string/info_input_contact" android:singleLine="true" style="@style/feedback_input_text" />
+            <TextView android:id="@id/contact_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/feedback_contact_tip" style="@style/feedback_contact_tip" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@id/night_mode_overlay" style="@style/night_mode_overlay" />
+</RelativeLayout>

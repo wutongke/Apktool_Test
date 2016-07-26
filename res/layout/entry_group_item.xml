@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.base.ui.CheckableLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/bg_entry_group_item" android:layout_width="fill_parent" android:layout_height="@dimen/subscribe_entry_item_height" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/entry_group_indicator" android:background="@drawable/entry_group_list_item_indicator" android:duplicateParentState="true" android:layout_width="3.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/entry_group_text" android:gravity="center" android:id="@id/text" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+</com.ss.android.article.base.ui.CheckableLinearLayout>

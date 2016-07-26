@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/login_layout" android:background="@color/left_drawer_login_bg" android:paddingTop="15.0dip" android:paddingBottom="18.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <ImageView android:id="@id/avatar" android:background="@drawable/round_avatar_bg" android:padding="1.0dip" android:layout_width="@dimen/left_drawer_avatar_size" android:layout_height="@dimen/left_drawer_avatar_size" android:layout_marginLeft="25.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/left_drawer_text" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_marginRight="@dimen/horizontal_padding" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/left_drawer_msg_layout" android:background="@drawable/left_drawer_msg_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_marginTop="9.0dip">
+                <ImageView android:id="@id/left_drawer_msg_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messageicon_left_drawer_btn" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/left_drawer_not_empty_msg" android:gravity="center" android:id="@id/left_drawer_msg_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/logout_layout" android:background="@color/left_drawer_login_bg" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip">
+            <ImageView android:id="@id/mobile_btn" android:src="@drawable/leftdrawer_login_phone" style="@style/left_drawer_login_btn" />
+            <View android:id="@id/phone_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/weixin_btn" android:src="@drawable/leftdrawer_login_weixin" style="@style/left_drawer_login_btn" />
+            <View android:id="@id/weixin_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/qzone_btn" android:src="@drawable/leftdrawer_login_qq" style="@style/left_drawer_login_btn" />
+            <View android:id="@id/qq_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <ImageView android:id="@id/weibo_btn" android:src="@drawable/leftdrawer_login_sina" style="@style/left_drawer_login_btn" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/left_drawer_more_login" android:gravity="center" android:id="@id/more_login_btn" android:background="@drawable/bg_left_drawer_more_login" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="24.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="17.0dip" android:text="@string/mine_more_login" android:drawableRight="@drawable/arrow_leftdrawer" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom" android:id="@id/login_shadow" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/item_container" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+        </ScrollView>
+        <ImageView android:layout_gravity="bottom" android:id="@id/shadow_leftdrawer" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/offline_btn" style="@style/left_drawer_bottom">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <ImageView android:id="@id/offline_progressbar" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/progrescircleicon_download_leftdrawer" />
+                <ImageView android:id="@id/offline_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/downloadicon_leftdrawer_btn" />
+            </FrameLayout>
+            <TextView android:id="@id/offline_text" android:text="@string/left_drawer_item_offline" style="@style/left_drawer_bottom_text" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/night_btn" style="@style/left_drawer_bottom">
+            <ImageView android:id="@id/night_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/nighticon_leftdrawer_btn" />
+            <TextView android:id="@id/night_text" android:text="@string/left_drawer_item_night" style="@style/left_drawer_bottom_text" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/setting_btn" style="@style/left_drawer_bottom">
+            <ImageView android:id="@id/setting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:src="@drawable/setupicon_leftdrawer_btn" />
+            <TextView android:id="@id/setting_text" android:text="@string/left_drawer_item_setting" style="@style/left_drawer_bottom_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

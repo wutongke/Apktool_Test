@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/item_setting_middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/txt_test_text" style="@style/setting_item_text" />
+    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+    <com.ss.android.common.ui.view.SwitchButton android:id="@id/test_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/message_video_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ss.android.image.AsyncImageView android:layout_gravity="center" android:id="@id/message_video_view_cover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" app:placeholderImageScaleType="fitXY" />
+        <TextView android:textSize="10.0sp" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/message_video_view_duration" android:layout_width="44.0dip" android:layout_height="20.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/message_video_view_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

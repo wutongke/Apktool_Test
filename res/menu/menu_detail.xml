@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/group_invisible" android:visible="false">
+        <item android:id="@id/menu_favor" android:orderInCategory="1" android:title="@string/detail_menu_favor" />
+        <item android:id="@id/menu_share" android:orderInCategory="2" android:title="@string/detail_menu_share" />
+        <item android:id="@id/menu_setting" android:orderInCategory="3" android:title="@string/detail_menu_setting" />
+        <item android:id="@id/menu_dislike" android:orderInCategory="4" android:title="@string/detail_menu_dislike" />
+        <item android:id="@id/menu_report" android:orderInCategory="5" android:title="@string/detail_menu_report" />
+    </group>
+    <group android:id="@id/group_lite" android:visible="false">
+        <item android:id="@id/menu_copylink" android:orderInCategory="1" android:title="@string/detail_menu_copylink" />
+        <item android:id="@id/menu_browser" android:orderInCategory="2" android:title="@string/detail_menu_browser" />
+    </group>
+</menu>

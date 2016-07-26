@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.topic.imagechooser.ImageChooserActionBar android:background="@drawable/bg_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinheise1_selector" android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinheise1_selector" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_image" android:layout_centerInParent="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinlanse1_selector" android:gravity="center_vertical" android:id="@id/ok_btn" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="14.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.ss.android.topic.imagechooser.ImageChooserActionBar>

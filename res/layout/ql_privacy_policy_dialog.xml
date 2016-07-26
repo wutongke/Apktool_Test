@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ql_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/xh_dialog_backgroud" android:paddingBottom="12.0dip" android:layout_width="318.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/privacy_policy_top" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/ql_quick_login_title" android:id="@id/privacy_policy_top_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/privacy_policy_body" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/privacy_policy_top">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/waiting_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/ql_black" android:gravity="center" android:id="@id/privacy_policy_textview_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ql_policy_loading" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/content_lay" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <WebView android:textAppearance="?android:textAppearanceSmall" android:id="@id/webview" android:background="@drawable/xh_dialog_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/retry_lay" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/ql_black" android:gravity="center" android:id="@id/privacy_policy_textview_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ql_no_connection" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/privacy_policy_retry" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/ql_btn_ok" android:layout_below="@id/privacy_policy_body" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/policy_dialog_btn_layout" android:layout_width="fill_parent" android:layout_height="56.0dip" android:weightSum="2.0" android:layout_below="@id/privacy_policy_body">
+            <Button android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/policy_dialog_cancel" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:text="@string/ql_cacel" android:layout_weight="1.0" />
+            <Button android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/policy_dialog_retry" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="@string/ql_btn_ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi2" android:id="@id/movie_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/short_movie_comment" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    <View android:id="@id/movie_line" android:background="@color/ssxinxian2" android:layout_width="100.0dip" android:layout_height="0.5dip" android:layout_alignLeft="@id/movie_bar_title" android:layout_alignRight="@id/movie_bar_title" android:layout_alignParentBottom="true" />
+</RelativeLayout>

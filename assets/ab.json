@@ -1,0 +1,43 @@
+{
+  "filter_keys": {
+    "clear_literary_type": {
+      "clear": "z1",
+      "clean": "z2",
+      "__default_key": "clear"
+    }
+  },
+  "traffic_map": [
+    {
+      "layer_name": "first_blood",
+      "filters": {
+        "first_install_version": ">=5.3.3"
+      },
+      "experiments": [
+        {
+          "group_name": "z1",
+          "min_region": 0,
+          "max_region": 299,
+          "results": {
+            "clear_literary_type": "clear"
+          }
+        },
+        {
+          "group_name": "z2",
+          "min_region": 300,
+          "max_region": 599,
+          "results": {
+            "clear_literary_type": "clean"
+          }
+        },
+        {
+          "group_name": "__default_key",
+          "min_region": 600,
+          "max_region": 999,
+          "results": {
+            "clear_literary_type": "clear"
+          }
+        }
+      ]
+    }
+  ]
+}

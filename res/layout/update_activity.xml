@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_weight="0.0" style="@style/title_bar_style">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ssl_update_title" android:layout_centerInParent="true" style="@style/title_text_style" />
+    </RelativeLayout>
+    <TextView android:textSize="17.0sp" android:textColor="#ff464646" android:gravity="center" android:id="@id/update_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="0.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/progress_container" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_weight="0.0">
+        <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <TextView android:textColor="@android:color/black" android:gravity="center" android:id="@id/progress_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    </LinearLayout>
+    <View android:id="@id/parting_line" android:background="@drawable/line_appupdate" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="14.0dip" android:layout_weight="0.0" />
+    <ScrollView android:id="@id/whatsnew_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="#ff464646" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/ssl_update_whatsnew" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff464646" android:id="@id/whatsnew" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:id="@id/update_btn" android:text="@string/ssl_update_update" style="@style/UpdateButtonAction" />
+        <Button android:id="@id/install_btn" android:text="@string/ssl_update_install" style="@style/UpdateButtonAction" />
+        <Button android:id="@id/stop_btn" android:text="@string/ssl_update_stop" style="@style/UpdateButtonAction" />
+    </FrameLayout>
+    <FrameLayout android:paddingTop="16.0dip" android:paddingBottom="44.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <Button android:id="@id/cancel_btn" android:text="@string/ssl_cancel" style="@style/UpdateButton" />
+        <Button android:id="@id/back_btn" android:text="@string/ssl_update_back" style="@style/UpdateButton" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fffafafa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textColor="#ff454545" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="25.0dip" android:text="@string/ss_hint_welcome" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff707070" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ss_hint_confirm_use_network" android:lineSpacingMultiplier="1.1" />
+    </ScrollView>
+    <CheckBox android:textColor="#ff707070" android:id="@id/remind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:text="@string/ss_no_longer_remind" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="95.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff454545" android:gravity="center" android:id="@id/cancel_btn" android:background="@drawable/btn_dlg_cancel" android:layout_width="0.0dip" android:layout_height="44.0dip" android:layout_marginRight="25.0dip" android:text="@string/label_cancel" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#fffafafa" android:gravity="center" android:id="@id/ok_btn" android:background="@drawable/btn_dlg_ok" android:layout_width="0.0dip" android:layout_height="44.0dip" android:text="@string/ss_label_continue" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

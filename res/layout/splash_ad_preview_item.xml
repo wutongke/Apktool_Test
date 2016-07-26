@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/splash_bg_no_image" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/res-auto">
+    <ImageView android:id="@id/splash_ad_banner_view" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:src="@drawable/splash_banner" android:scaleType="centerInside" android:layout_alignParentBottom="true" />
+    <com.ss.android.image.AsyncImageView android:id="@id/splash_ad_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_above="@id/splash_ad_banner_view" fresco:actualImageScaleType="fitXY" fresco:placeholderImage="@drawable/simple_image_holder_listpage" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/splash_ad_click" android:background="@color/ssxinmian16" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignBottom="@id/splash_ad_image_view">
+        <TextView android:textColor="@color/ssxinzi7" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/splash_ad_button_text" android:drawableRight="@drawable/splash_ad_button_view" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

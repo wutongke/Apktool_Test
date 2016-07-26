@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingRight="@dimen/list_item_horizontal_outside_padding" android:layout_width="fill_parent" android:layout_height="@dimen/feed_card_505_header_height" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/header_image" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" fresco:useImagePolicy="false" fresco:actualImageScaleType="fitStart" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/feed_card_pop_icon" android:paddingLeft="@dimen/list_item_horizontal_inside_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/feed_card_header_hight" android:src="@drawable/popicon_listpage" android:scaleType="centerInside" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/ugc_action_style" />
+</LinearLayout>

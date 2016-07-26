@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/comment_footer_divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3_selector" android:layout_gravity="center_horizontal" android:id="@id/comment_footer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0sp" android:text="@string/look_more" />
+    <View android:id="@id/comment_footer_stub" android:layout_width="wrap_content" android:layout_height="31.0dip" />
+</LinearLayout>

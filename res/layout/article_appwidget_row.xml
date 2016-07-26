@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/list_item" style="@style/widget_list_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/item_title" style="@style/widget_item_title_in_list" />
+    <LinearLayout style="@style/widget_item_info_layout">
+        <TextView android:id="@id/item_source" style="@style/widget_item_source" />
+        <ImageView android:id="@id/media_mark" style="@style/widget_item_mark" />
+        <TextView android:id="@id/comment_count" style="@style/widget_item_comment_count" />
+        <TextView android:id="@id/publish_time" style="@style/widget_item_time" />
+    </LinearLayout>
+</LinearLayout>

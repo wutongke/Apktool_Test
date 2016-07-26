@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_cancel" android:layout_centerVertical="true" style="@style/title_bar_button" />
+    <TextView android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_title_comment_dialog" android:layout_centerInParent="true" style="@style/title_text_style" />
+    <TextView android:id="@id/ss_share_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_send" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/title_bar_button" />
+</RelativeLayout>

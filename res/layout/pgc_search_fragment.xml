@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/search_input_layout" layout="@layout/base_search_fragment" />
+    <FrameLayout android:id="@id/searchWebView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_input_layout" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_input_layout" style="@style/article_list_style" />
+    <include android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" layout="@layout/notify_view_layout" />
+</RelativeLayout>

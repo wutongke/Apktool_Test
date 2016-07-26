@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/item_image_0" android:layout_marginRight="3.0dip" android:layout_weight="1.0" style="@style/item_image" />
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/item_image_1" android:layout_marginRight="3.0dip" android:layout_weight="1.0" style="@style/item_image" />
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/item_image_2" android:layout_weight="1.0" style="@style/item_image" />
+</LinearLayout>

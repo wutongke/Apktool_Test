@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_allow_stacked_button_bar">true</bool>
+    <bool name="abc_action_bar_embed_tabs_pre_jb">false</bool>
+    <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
+    <bool name="is_large_screen">false</bool>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="abc_config_closeDialogWhenTouchOutside">true</bool>
+    <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="account2_allow_night_mode">true</bool>
+    <bool name="account2_avatar_make_circular">true</bool>
+    <bool name="account2_show_layout_avatar">true</bool>
+    <bool name="account2_show_layout_desc">true</bool>
+    <bool name="account2_show_layout_name">true</bool>
+    <bool name="comment_adapter2_register_content_click_event">false</bool>
+    <bool name="comment_adapter2_show_last_hot_cell_divider">false</bool>
+    <bool name="daily_sign_dialog_style">false</bool>
+    <bool name="enable_recommend_upon_auth">true</bool>
+    <bool name="feedback_avatar_make_circular">true</bool>
+    <bool name="feedback_use_really_night_mode">true</bool>
+    <bool name="splash_fit_xy">true</bool>
+    <bool name="splash_full_screen">false</bool>
+</resources>

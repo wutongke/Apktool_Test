@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/category_optimize_tip_layout" android:background="@drawable/add_channels_bubble" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/ssxinzi1" android:id="@id/category_optimize_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="6.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/category_tip_ignore_text" android:layout_gravity="right" android:id="@id/category_optimize_tip_ignore" android:background="@drawable/category_tip_ignore_bg" android:paddingLeft="6.0dip" android:paddingTop="3.0dip" android:paddingRight="6.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:text="@string/category_optimize_tip_ignore" />
+</LinearLayout>

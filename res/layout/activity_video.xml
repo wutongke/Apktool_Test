@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/video_root" android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.livechat.media.camera.widget.VideoView android:layout_gravity="center" android:id="@id/video_player_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/video_player_preview_image" android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/video_player_progress" android:layout_width="28.0dip" android:layout_height="28.0dip" android:indeterminateDrawable="@drawable/video_load_progress" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/video_player_bottom_layout" android:background="@color/video_player_bottom_bg_color" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/video_player_play_pause" android:paddingLeft="16.0dip" android:layout_width="32.0dip" android:layout_height="fill_parent" android:src="@drawable/chatroom_video_preview_play" />
+        <TextView android:textColor="@color/ssxinzi8" android:id="@id/video_player_time_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="12.0dip" android:text="00:00" />
+        <SeekBar android:layout_gravity="center_vertical" android:id="@id/video_player_seekbar" android:background="@null" android:paddingLeft="0.0dip" android:paddingTop="8.0dip" android:paddingRight="0.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="4.0dip" android:progressDrawable="@drawable/video_seek_bar" android:minHeight="4.0dip" android:thumb="@drawable/video_seek_thumb" android:thumbOffset="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/ssxinzi8" android:id="@id/video_player_seekbar_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="16.0dip" android:text="00:00" />
+    </LinearLayout>
+</FrameLayout>

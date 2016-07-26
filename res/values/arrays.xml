@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_avatar_type">
+        <item>从相册选择</item>
+        <item>拍照</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="cellflag_choices">
+        <item>网络返回</item>
+        <item>U2</item>
+        <item>U7</item>
+        <item>U8</item>
+    </string-array>
+    <string-array name="city_list">
+        <item>安康,ANKANG</item>
+        <item>安庆,ANQING</item>
+        <item>鞍山,ANSHAN</item>
+        <item>安阳,ANYANG</item>
+        <item>保定,BAODING</item>
+        <item>宝鸡,BAOJI</item>
+        <item>包头,BAOTOU</item>
+        <item>北京,BEIJING</item>
+        <item>蚌埠,BENGBU</item>
+        <item>滨州,BINZHOU</item>
+        <item>长春,CHANGCHUN</item>
+        <item>常德,CHANGDE</item>
+        <item>长沙,CHANGSHA</item>
+        <item>常州,CHANGZHOU</item>
+        <item>承德,CHENGDE</item>
+        <item>成都,CHENGDU</item>
+        <item>郴州,CHENZHOU</item>
+        <item>重庆,CHONGQING</item>
+        <item>滁州,CHUZHOU</item>
+        <item>大连,DALIAN</item>
+        <item>大同,DATONG</item>
+        <item>达州,DAZHOU</item>
+        <item>德州,DEZHOU</item>
+        <item>东莞,DONGGUAN</item>
+        <item>福州,FUZHOU</item>
+        <item>赣州,GANZHOU</item>
+        <item>广安,GUANGAN</item>
+        <item>广元,GUANGYUAN</item>
+        <item>广州,GUANGZHOU</item>
+        <item>桂林,GUILIN</item>
+        <item>贵阳,GUIYANG</item>
+        <item>哈尔滨,HAERBIN</item>
+        <item>海口,HAIKOU</item>
+        <item>邯郸,HANDAN</item>
+        <item>杭州,HANGZHOU</item>
+        <item>合肥,HEFEI</item>
+        <item>淮北,HUAIBEI</item>
+        <item>呼和浩特,HUHEHAOTE</item>
+        <item>惠州,HUIZHOU</item>
+        <item>焦作,JIAOZUO</item>
+        <item>嘉兴,JIAXING</item>
+        <item>吉林,JILIN</item>
+        <item>济南,JINAN</item>
+        <item>金华,JINHUA</item>
+        <item>济宁,JINING</item>
+        <item>九江,JIUJIANG</item>
+        <item>酒泉,JIUQUAN</item>
+        <item>开封,KAIFENG</item>
+        <item>昆明,KUNMING</item>
+        <item>廊坊,LANGFANG</item>
+        <item>兰州,LANZHOU</item>
+        <item>连云港,LIANYUNGANG</item>
+        <item>聊城,LIAOCHENG</item>
+        <item>临沂,LINYI</item>
+        <item>柳州,LIUZHOU</item>
+        <item>娄底,LOUDI</item>
+        <item>六安,LUAN</item>
+        <item>洛阳,LUOYANG</item>
+        <item>泸州,LUZHOU</item>
+        <item>马鞍山,MAANSHAN</item>
+        <item>眉山,MEISHAN</item>
+        <item>绵阳,MIANYANG</item>
+        <item>南昌,NANCHANG</item>
+        <item>南京,NANJING</item>
+        <item>南宁,NANNING</item>
+        <item>南通,NANTONG</item>
+        <item>南阳,NANYANG</item>
+        <item>宁波,NINGBO</item>
+        <item>宁德,NINGDE</item>
+        <item>盘锦,PANJIN</item>
+        <item>平顶山,PINGDINGSHAN</item>
+        <item>莆田,PUTIAN</item>
+        <item>青岛,QINGDAO</item>
+        <item>齐齐哈尔,QIQIHAER</item>
+        <item>泉州,QUANZHOU</item>
+        <item>衢州,QUZHOU</item>
+        <item>三亚,SANYA</item>
+        <item>上海,SHANGHAI</item>
+        <item>商洛,SHANGLUO</item>
+        <item>绍兴,SHAOXING</item>
+        <item>邵阳,SHAOYANG</item>
+        <item>沈阳,SHENYANG</item>
+        <item>深圳,SHENZHEN</item>
+        <item>石家庄,SHIJIAZHUANG</item>
+        <item>十堰,SHIYAN</item>
+        <item>绥化,SUIHUA</item>
+        <item>遂宁,SUINING</item>
+        <item>宿迁,SUQIAN</item>
+        <item>苏州,SUZHOU</item>
+        <item>宿州,SUZHOU</item>
+        <item>太原,TAIYUAN</item>
+        <item>台州,TAIZHOU</item>
+        <item>唐山,TANGSHAN</item>
+        <item>天津,TIANJIN</item>
+        <item>潍坊,WEIFANG</item>
+        <item>威海,WEIHAI</item>
+        <item>温州,WENZHOU</item>
+        <item>武汉,WUHAN</item>
+        <item>芜湖,WUHU</item>
+        <item>乌鲁木齐,WULUMUQI</item>
+        <item>无锡,WUXI</item>
+        <item>厦门,XIAMEN</item>
+        <item>西安,XIAN</item>
+        <item>湘潭,XIANGTAN</item>
+        <item>咸阳,XIANYANG</item>
+        <item>邢台,XINGTAI</item>
+        <item>西宁,XINING</item>
+        <item>信阳,XINYANG</item>
+        <item>雅安,YAAN</item>
+        <item>盐城,YANCHENG</item>
+        <item>扬州,YANGZHOU</item>
+        <item>烟台,YANTAI</item>
+        <item>宜宾,YIBIN</item>
+        <item>宜昌,YICHANG</item>
+        <item>银川,YINCHUAN</item>
+        <item>永州,YONGZHOU</item>
+        <item>岳阳,YUEYANG</item>
+        <item>榆林,YULIN</item>
+        <item>枣庄,ZAOZHUANG</item>
+        <item>张家口,ZHANGJIAKOU</item>
+        <item>漳州,ZHANGZHOU</item>
+        <item>湛江,ZHANJIANG</item>
+        <item>郑州,ZHENGZHOU</item>
+        <item>镇江,ZHENJIANG</item>
+        <item>中山,ZHONGSHAN</item>
+        <item>周口,ZHOUKOU</item>
+        <item>珠海,ZHUHAI</item>
+        <item>株洲,ZHUZHOU</item>
+        <item>淄博,ZIBO</item>
+        <item>资阳,ZIYANG</item>
+        <item>遵义,ZUNYI</item>
+    </string-array>
+    <string-array name="download_choices">
+        <item>前20张</item>
+        <item>前40张</item>
+        <item>前60张</item>
+        <item>前80张</item>
+        <item>前100张</item>
+    </string-array>
+    <string-array name="fontsize_choices">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+        <item>特大</item>
+    </string-array>
+    <array name="guide_pictures" />
+    <string-array name="list_comment_choices">
+        <item>不显示</item>
+        <item>只显示好友</item>
+        <item>不限</item>
+    </string-array>
+    <string-array name="list_mode_choices">
+        <item>标题</item>
+        <item>标题+摘要</item>
+    </string-array>
+    <string-array name="load_image_choices">
+        <item>最佳效果(下载大图)</item>
+        <item>较省流量(智能下图)</item>
+        <item>极省流量(不下载图)</item>
+    </string-array>
+    <string-array name="qq_packages">
+        <item>com.tencent.mobileqq</item>
+        <item>com.tencent.qqlite</item>
+        <item>com.tencent.minihd.qq</item>
+        <item>com.tencent.mobileqqi</item>
+    </string-array>
+    <string-array name="refresh_list_choices">
+        <item>自动刷新</item>
+        <item>仅Wi-Fi下自动刷新</item>
+        <item>手动刷新</item>
+    </string-array>
+    <string-array name="report_essay_names">
+        <item>广告</item>
+        <item>低俗</item>
+        <item>重复</item>
+        <item>过时</item>
+        <item>其他问题</item>
+    </string-array>
+    <integer-array name="report_essay_values">
+        <item>23</item>
+        <item>7</item>
+        <item>1</item>
+        <item>20</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="report_names">
+        <item>广告</item>
+        <item>低俗</item>
+        <item>重复</item>
+        <item>过时</item>
+        <item>其他问题</item>
+    </string-array>
+    <string-array name="report_post_names">
+        <item>营销广告</item>
+        <item>淫秽色情</item>
+        <item>恶意攻击谩骂</item>
+        <item>发帖重复</item>
+        <item>其他问题</item>
+    </string-array>
+    <integer-array name="report_post_values">
+        <item>3</item>
+        <item>2</item>
+        <item>4</item>
+        <item>1</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="report_user_names">
+        <item>淫秽色情</item>
+        <item>营销广告</item>
+        <item>恶意攻击谩骂</item>
+        <item>其他问题</item>
+    </string-array>
+    <integer-array name="report_user_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>0</item>
+    </integer-array>
+    <integer-array name="report_values">
+        <item>23</item>
+        <item>22</item>
+        <item>1</item>
+        <item>20</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="report_video_names">
+        <item>广告</item>
+        <item>重复</item>
+        <item>标题夸张</item>
+        <item>色情低俗</item>
+        <item>播放不了</item>
+        <item>视频播放卡顿</item>
+        <item>视频声音和画面不同步，视频无声音</item>
+        <item>内容不完整</item>
+        <item>内容质量差</item>
+        <item>仇恨、暴力等令人反感的内容</item>
+        <item>其他问题，我要吐槽</item>
+    </string-array>
+    <integer-array name="report_video_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>0</item>
+    </integer-array>
+    <string-array name="sina_weibo_packages">
+        <item>com.sina.weibo</item>
+        <item>com.sina.weibog3</item>
+    </string-array>
+    <string-array name="video_auto_play_mode_choices">
+        <item>3G/4G和Wi-Fi</item>
+        <item>仅Wi-Fi</item>
+        <item>关闭</item>
+    </string-array>
+    <string-array name="volcano_cellflag_choices">
+        <item>feed</item>
+        <item>火山直播频道</item>
+        <item>美女频道</item>
+    </string-array>
+    <string-array name="weekday_names">
+        <item>星期天</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+    </string-array>
+    <array name="why_pictures">
+        <item>@drawable/why1</item>
+        <item>@drawable/why2</item>
+    </array>
+</resources>

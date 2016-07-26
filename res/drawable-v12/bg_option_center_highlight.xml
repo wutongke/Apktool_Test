@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/bg_option_highlight_start" android:endColor="@color/bg_option_highlight_end" android:angle="90.0" android:centerColor="@color/bg_option_highlight_center" />
+    <stroke android:width="@dimen/bg_option_border_width" android:color="@color/bg_option_border" />
+    <corners android:radius="1.0dip" android:topLeftRadius="@dimen/bg_option_corner_radius_none" android:topRightRadius="@dimen/bg_option_corner_radius_none" android:bottomLeftRadius="@dimen/bg_option_corner_radius_none" android:bottomRightRadius="@dimen/bg_option_corner_radius_none" />
+    <padding android:left="@dimen/bg_option_padding_left" android:top="@dimen/bg_option_padding_top" android:right="@dimen/bg_option_padding_right" android:bottom="@dimen/bg_option_padding_bottom" />
+</shape>

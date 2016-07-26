@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/item_abstract" android:visibility="gone" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/item_abstract" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/zzcomment_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/comment_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_zz_comment_top_margin" android:maxLines="2" android:lineSpacingMultiplier="1.4" />
+</LinearLayout>

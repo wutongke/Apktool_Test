@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/avatar" android:background="@drawable/big_defaulthead_head" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/digg_list_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" app:actualImageScaleType="centerInside" app:roundAsCircle="true" />
+    <ImageView android:id="@id/vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/profile_follow_vyellow" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" />
+    <com.ss.android.article.base.ui.PriorityLinearLayout android:id="@id/user_role_container" android:layout_marginRight="@dimen/digg_list_margin" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" style="@style/post_item_user_layout" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:pll_measure_priority="0" app:pll_layout_order="0" />
+    </com.ss.android.article.base.ui.PriorityLinearLayout>
+    <View android:id="@id/divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/avatar" />
+</RelativeLayout>

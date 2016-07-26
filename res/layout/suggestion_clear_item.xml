@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/clear_history_layout" android:background="@drawable/bg_detail_search_item" android:layout_width="fill_parent" android:layout_height="43.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:gravity="center" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/clear_history" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/bottom_divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

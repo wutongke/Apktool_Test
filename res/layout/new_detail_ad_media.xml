@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/ad_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/ad_media_pic" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginRight="10.0dip" fresco:roundAsCircle="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_media_right_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ad_media_pic" android:layout_centerVertical="true">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/ad_media_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi6" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ad_media_label" android:background="@drawable/detail_ad_media_tuiguang" android:layout_width="26.0dip" android:layout_height="14.0dip" android:layout_marginLeft="8.0dip" android:text="@string/ad_label_info" />
+        </LinearLayout>
+        <com.ss.android.article.base.ui.EllipsisTextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:gravity="center" android:id="@id/ad_media_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:minLines="1" android:includeFontPadding="false" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</merge>

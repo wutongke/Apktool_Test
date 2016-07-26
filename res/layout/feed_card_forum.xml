@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/title_icon_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/feed_item_horizontal_margin">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/title_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" />
+            <com.ss.android.article.base.feature.feed.activity.InfoLayout android:id="@id/top_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_info_layout_title_gap" android:layout_marginRight="12.0dip" />
+        </LinearLayout>
+        <com.ss.android.article.common.NightModeAsyncImageView android:layout_gravity="center|right" android:id="@id/right_icon" android:visibility="visible" android:layout_width="@dimen/item_image_width" android:layout_height="@dimen/item_image_height" fresco:actualImageScaleType="fitCenter" fresco:backgroundImage="@drawable/simple_image_holder_listpage" />
+    </FrameLayout>
+    <ViewStub android:id="@id/multi_image_layout_stub" android:layout="@layout/feed_multi_image_layout" android:inflatedId="@id/multi_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/multi_image_title_gap" android:layout_marginRight="@dimen/feed_item_horizontal_margin" />
+    <com.ss.android.article.base.feature.feed.activity.InfoLayout android:id="@id/info_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/feed_info_layout_title_gap" android:layout_marginRight="@dimen/feed_item_horizontal_margin" android:layout_marginBottom="14.0dip" />
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginRight="@dimen/feed_item_horizontal_margin" />
+</LinearLayout>

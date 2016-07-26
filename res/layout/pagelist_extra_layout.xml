@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/notify_view_text" android:visibility="gone" android:layout_width="fill_parent" style="@style/list_notify_view" />
+    </RelativeLayout>
+    <com.ss.android.article.base.ui.LoadingFlashView android:layout_gravity="center" android:id="@id/empty_load_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

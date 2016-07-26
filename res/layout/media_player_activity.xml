@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff000001" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/player_surface" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/player_show" android:background="@drawable/media_tip_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/player_surface">
+        <ImageView android:id="@id/player_player_btn" android:background="@drawable/media_pause_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/player_half_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <SeekBar android:id="@id/player_half_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/media_seekbar" android:thumb="@drawable/media_seekbar_thumb" style="@style/media_seekbar" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/player_half_sum_length" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/media_lenght_text" />
+                <TextView android:id="@id/player_half_left_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/media_lenght_text" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/player_full_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/player_full_sum_length" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/media_lenght_text" />
+            <SeekBar android:id="@id/player_full_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progressDrawable="@drawable/media_seekbar" android:thumb="@drawable/media_seekbar_thumb" android:layout_weight="1.0" style="@style/media_seekbar" />
+            <TextView android:id="@id/player_full_left_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/media_lenght_text" />
+        </LinearLayout>
+        <ImageView android:id="@id/player_full_btn" android:background="@drawable/media_full_player_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="7.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/media_btn_finish" android:gravity="center" android:id="@id/player_back_btn" android:background="@drawable/media_back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_btn_finish" />
+    <ProgressBar android:id="@id/player_progress" android:layout_width="12.0dip" android:layout_height="12.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/ss_progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

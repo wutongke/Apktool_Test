@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TTEditor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="editor.css">
+    <script src="jquery.js"></script>
+    <script src="jquery.mobile-events.min.js"></script>
+    <script src="ZSSRichTextEditor.js"></script>
+    <!--<script src="wpload.js"></script>
+    <script src="wpsave.js"></script>-->
+    <script src="rangy-core.js"></script>
+    <script src="rangy-selectionsaverestore.js"></script>
+    <script>
+      $(document).ready(function() {
+        ZSSEditor.init();
+      });
+    </script>
+  </head>
+  <body>
+      <div contenteditable="true" id="zss_field_content" class="field"></div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/widget_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/widget_titlebar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/title_icon" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:drawableLeft="@drawable/widget_title" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <ImageView android:layout_gravity="center" android:id="@id/refresh" android:src="@drawable/ic_widget_refresh" style="@style/widget_button" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" style="?android:attr/progressBarStyleSmall" />
+            </FrameLayout>
+        </FrameLayout>
+        <ImageView android:background="@drawable/widget_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+        <ImageView android:id="@id/backward" android:src="@drawable/ic_widget_backward" style="@style/widget_button" />
+        <ImageView android:background="@drawable/widget_line" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+        <ImageView android:id="@id/forward" android:layout_marginRight="6.0dip" android:src="@drawable/ic_widget_forward" style="@style/widget_button" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/widget_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip">
+            <LinearLayout android:id="@id/list_item_0" style="@style/widget_item_style">
+                <TextView android:id="@id/item_title_0" style="@style/widget_item_title" />
+                <LinearLayout style="@style/widget_item_info_layout">
+                    <TextView android:id="@id/item_source_0" style="@style/widget_item_source" />
+                    <ImageView android:id="@id/media_mark_0" style="@style/widget_item_mark" />
+                    <TextView android:id="@id/comment_count_0" style="@style/widget_item_comment_count" />
+                    <TextView android:id="@id/publish_time_0" style="@style/widget_item_time" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/list_item_1" style="@style/widget_item_style">
+                <ImageView style="@style/widget_divider" />
+                <TextView android:id="@id/item_title_1" style="@style/widget_item_title" />
+                <LinearLayout style="@style/widget_item_info_layout">
+                    <TextView android:id="@id/item_source_1" style="@style/widget_item_source" />
+                    <ImageView android:id="@id/media_mark_1" style="@style/widget_item_mark" />
+                    <TextView android:id="@id/comment_count_1" style="@style/widget_item_comment_count" />
+                    <TextView android:id="@id/publish_time_1" style="@style/widget_item_time" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/list_item_2" style="@style/widget_item_style">
+                <ImageView style="@style/widget_divider" />
+                <TextView android:id="@id/item_title_2" style="@style/widget_item_title" />
+                <LinearLayout style="@style/widget_item_info_layout">
+                    <TextView android:id="@id/item_source_2" style="@style/widget_item_source" />
+                    <ImageView android:id="@id/media_mark_2" style="@style/widget_item_mark" />
+                    <TextView android:id="@id/comment_count_2" style="@style/widget_item_comment_count" />
+                    <TextView android:id="@id/publish_time_2" style="@style/widget_item_time" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/list_item_3" style="@style/widget_item_style">
+                <ImageView style="@style/widget_divider" />
+                <TextView android:id="@id/item_title_3" style="@style/widget_item_title" />
+                <LinearLayout style="@style/widget_item_info_layout">
+                    <TextView android:id="@id/item_source_3" style="@style/widget_item_source" />
+                    <ImageView android:id="@id/media_mark_3" style="@style/widget_item_mark" />
+                    <TextView android:id="@id/comment_count_3" style="@style/widget_item_comment_count" />
+                    <TextView android:id="@id/publish_time_3" style="@style/widget_item_time" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="#ff4e4e4e" android:layout_gravity="center" android:id="@id/error_info" android:padding="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_error_info" />
+    </FrameLayout>
+</LinearLayout>

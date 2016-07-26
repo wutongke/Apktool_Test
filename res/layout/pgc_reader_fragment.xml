@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/pgc_reader_layout" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <LinearLayout android:id="@id/tab_repin_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/pgc_reader_tab">
+            <TextView android:id="@id/tab_repin_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_no_friends" style="@style/profile_friend_tab_number_text" />
+            <TextView android:id="@id/tab_repin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pgc_repin" style="@style/profile_friend_tab_friend_text" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/repin_digg_divider" android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+        <LinearLayout android:id="@id/tab_digg_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/pgc_reader_tab">
+            <TextView android:id="@id/tab_digg_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_no_friends" style="@style/profile_friend_tab_number_text" />
+            <TextView android:id="@id/tab_digg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pgc_digg" style="@style/profile_friend_tab_friend_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/tab_layout_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/pgc_reader_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout_divider">
+        <FrameLayout android:id="@id/pgc_reader_fragment_repin" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/pgc_reader_fragment_digg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

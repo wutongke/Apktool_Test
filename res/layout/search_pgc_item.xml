@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/bg_detail_search_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/pgc_avatar" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:placeholderImage="@drawable/big_defaulthead_head" app:roundAsCircle="true" app:roundingBorderWidth="0.5dip" app:roundingBorderColor="@color/ssxinxian1_press" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi6" android:gravity="center" android:id="@id/pgc_subscribe_btn" android:background="@drawable/search_subscribe_btn_bg" android:layout_width="53.0dip" android:layout_height="28.0dip" android:layout_marginRight="15.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/pgc_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="9.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/pgc_subscribe_btn" android:layout_toRightOf="@id/pgc_avatar" android:layout_alignTop="@id/pgc_avatar" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/pgc_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="9.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_toLeftOf="@id/pgc_subscribe_btn" android:layout_toRightOf="@id/pgc_avatar" android:layout_below="@id/pgc_name" />
+    </RelativeLayout>
+    <View android:id="@id/divide_line1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:id="@id/divide_line2" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:id="@id/divide_line3" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

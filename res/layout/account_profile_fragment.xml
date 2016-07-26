@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/account_margin_horizontal" android:paddingRight="@dimen/account_margin_horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.image.AsyncImageView android:id="@id/img_avatar" android:layout_width="160.0px" android:layout_height="160.0px" android:layout_marginTop="20.0px" fresco:placeholderImage="@drawable/head_sdk_login_selector" fresco:roundAsCircle="true" />
+    <EditText android:textSize="32.0px" android:textColor="@color/ssxinzi2" android:textColorHint="@color/ssxinzi9" android:id="@id/edt_user_name" android:background="@drawable/account_round_input_bg" android:layout_width="fill_parent" android:layout_height="@dimen/account_login_btn_height" android:layout_marginTop="48.0px" android:hint="@string/username_hint" />
+    <Button android:textSize="36.0px" android:textColor="@color/ssxinzi8" android:id="@id/btn_confirm" android:background="@drawable/account_btn_red_selector" android:layout_width="fill_parent" android:layout_height="@dimen/account_login_btn_height" android:layout_marginTop="@dimen/account_login_btn_margin_top" android:text="@string/account_complete_with_space" />
+    <EditText android:id="@id/edt_hide" android:layout_width="20.0px" android:layout_height="20.0px" android:alpha="0.0" />
+    <TextView android:textSize="28.0px" android:textColor="@color/ssxinzi1_selector" android:id="@id/tv_skip" android:paddingTop="20.0px" android:paddingBottom="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/account_skip" />
+    <TextView android:textSize="24.0px" android:textColor="@color/ssxinzi3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="112.0px" android:text="@string/account_change_password_hint" />
+</LinearLayout>

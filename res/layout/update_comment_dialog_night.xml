@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/dislike_bg_normal_night" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/popup_bar_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/digg_layout" android:background="@drawable/dislike_bg_night" android:paddingLeft="@dimen/pop_item_padding" android:paddingRight="@dimen/pop_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/popup_bar_item_minwidth" android:minHeight="@dimen/popup_bar_minheight">
+        <ImageView android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/video_cover_comm_dig_night" />
+        <TextView android:textColor="@color/update_comment_dialog_text_night" android:gravity="center_vertical" android:id="@id/digg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/dislike_text_night" />
+    </LinearLayout>
+    <ImageView android:id="@id/dislike_line" android:background="@drawable/dislike_line_night" android:layout_width="0.5dip" android:layout_height="22.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bury_layout" android:background="@drawable/dislike_bg_night" android:paddingLeft="@dimen/pop_item_padding" android:paddingRight="@dimen/pop_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/popup_bar_item_minwidth" android:minHeight="@dimen/popup_bar_minheight">
+        <ImageView android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/video_cover_comm_bury_night" />
+        <TextView android:textColor="@color/update_comment_dialog_text_night" android:gravity="center_vertical" android:id="@id/bury" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/dislike_text_night" />
+    </LinearLayout>
+    <ImageView android:id="@id/bury_dislike_line" android:background="@drawable/dislike_line_night" android:layout_width="0.5dip" android:layout_height="22.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/comment_layout" android:background="@drawable/dislike_bg_night" android:paddingLeft="@dimen/pop_item_padding" android:paddingRight="@dimen/pop_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/pop_item_width" android:minHeight="@dimen/popup_bar_minheight">
+        <TextView android:gravity="center" android:id="@id/comment" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/listpage_more_review_night" android:drawablePadding="4.0dip" style="@style/dislike_text_night" />
+    </LinearLayout>
+    <ImageView android:id="@id/comment_dislike_line" android:background="@drawable/dislike_line_night" android:layout_width="0.5dip" android:layout_height="22.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/delete_layout" android:background="@drawable/dislike_bg_night" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:minHeight="@dimen/popup_bar_minheight">
+        <TextView android:gravity="center" android:id="@id/delete" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/listpage_more_delete_night" android:drawablePadding="4.0dip" style="@style/dislike_text_night" />
+    </LinearLayout>
+    <ImageView android:id="@id/delete_dislike_line" android:background="@drawable/dislike_line_night" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="22.0dip" />
+    <ImageView android:id="@id/close_btn" android:background="@drawable/dislike_bg_night" android:layout_width="@dimen/popup_bar_minheight" android:layout_height="@dimen/popup_bar_minheight" android:src="@drawable/listpage_more_close_night" android:scaleType="center" />
+</LinearLayout>

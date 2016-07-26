@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/bg_row_pressed_start_night" android:endColor="@color/bg_row_pressed_end_night" android:angle="90.0" android:centerColor="@color/bg_row_pressed_center_night" />
+            <stroke android:width="@dimen/bg_row_border_width" android:color="@color/bg_row_border_night" />
+            <padding android:left="@dimen/bg_row_padding_left" android:top="@dimen/bg_row_padding_top" android:right="@dimen/bg_row_padding_right" android:bottom="@dimen/bg_row_padding_bottom" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient android:startColor="@color/bg_row_normal_start_night" android:endColor="@color/bg_row_normal_end_night" android:angle="90.0" android:centerColor="@color/bg_row_normal_center_night" />
+            <stroke android:width="@dimen/bg_row_border_width" android:color="@color/bg_row_border_night" />
+            <padding android:left="@dimen/bg_row_padding_left" android:top="@dimen/bg_row_padding_top" android:right="@dimen/bg_row_padding_right" android:bottom="@dimen/bg_row_padding_bottom" />
+        </shape>
+    </item>
+</selector>

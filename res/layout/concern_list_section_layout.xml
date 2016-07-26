@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/stub_divider" android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <View android:id="@id/stub" android:background="@color/ssxinmian2" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/stub_divider" />
+    <View android:id="@id/stub_divider2" android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/stub" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi1" android:orientation="vertical" android:id="@id/section_text" android:background="@color/ssxinmian4" android:paddingTop="12.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/my_managing" android:drawableLeft="@drawable/concern_section_icon" android:drawablePadding="4.0dip" android:layout_below="@id/stub_divider2" style="@style/concern_list_item_style" />
+</RelativeLayout>

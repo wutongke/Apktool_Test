@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ss_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitXY" android:layout_weight="0.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:layout_gravity="center_vertical" android:id="@id/ss_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_weight="0.0" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff336699" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/ss_nickname" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/account_account_action" android:layout_gravity="center_vertical" android:id="@id/ss_hint" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_hint_bind" android:layout_weight="0.0" />
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="0.0" style="@style/ss_account_arrow" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/rect_mian3xian1_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/feed_like_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi2_selector" android:ellipsize="end" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="30.0dip" android:singleLine="true" android:layout_toLeftOf="@id/divider" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="@color/ssxinxian10" android:layout_width="0.5dip" android:layout_height="14.0dip" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/like" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3_selector" android:gravity="center_vertical" android:id="@id/like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:minWidth="60.0dip" android:minHeight="@dimen/feed_like_layout_height" android:text="@string/like" android:drawableLeft="@drawable/like_heart_textpage_selector" android:drawablePadding="3.0dip" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/like_arrow_textpage_selector" android:layout_toLeftOf="@id/anchor" android:layout_centerVertical="true" />
+    <View android:id="@id/anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

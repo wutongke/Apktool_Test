@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/update_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/mobile_frame" android:layout_height="44.0dip" style="@style/mobile_box_single">
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/mobile_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/default_mcc" style="@style/mobile_edit_hit" />
+                    <TextView android:id="@id/divider_line" style="@style/mobile_box_middle_line" />
+                    <EditText android:layout_gravity="center_vertical" android:id="@id/mobile_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/mobile_hint" android:layout_weight="1.0" android:inputType="number" style="@style/mobile_edit_new" />
+                    <ImageView android:id="@id/clear_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clear_edit_view" />
+                </LinearLayout>
+                <Button android:id="@id/next_btn" android:layout_width="fill_parent" android:text="@string/next" style="@style/mobile_btn" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/user_agreement_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@id/user_agreement_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" style="@style/mobile_checkbox" />
+                    <TextView android:textColor="@color/check_text" android:layout_gravity="center_vertical" android:id="@id/left_of_agreement" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/left_of_agreement" style="@style/mobile_accent_link_text" />
+                    <TextView android:layout_gravity="center_vertical" android:id="@id/user_agreement_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_agreement" style="@style/mobile_accent_link_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</LinearLayout>

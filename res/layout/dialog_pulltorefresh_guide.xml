@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/arrow" android:visibility="invisible" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginTop="90.0dip" android:layout_marginBottom="14.0dip" android:src="@drawable/refresh_arrow_icon" />
+    <RelativeLayout android:id="@id/hand_layout" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/refresh_guide_hand_bg" android:clipChildren="false" android:layout_width="111.0dip" android:layout_height="111.0dip">
+            <View android:id="@id/hand_flash_bg" android:background="@drawable/refresh_guide_hand_flash_bg" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerInParent="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi7" android:id="@id/hand_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pull_to_refresh" android:layout_above="@id/hand_flash_bg" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/hand" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="53.0dip" android:src="@drawable/refresh_finger_icon" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi7" android:gravity="center" android:id="@id/close_btn" android:background="@drawable/refresh_has_known_btn_bg" android:visibility="invisible" android:layout_width="84.0dip" android:layout_height="31.0dip" android:layout_marginTop="10.0dip" android:text="@string/i_see" android:layout_below="@id/hand" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

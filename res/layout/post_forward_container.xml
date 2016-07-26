@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/forward_layout" android:background="@color/lanhui1" android:paddingLeft="@dimen/feed_margin" android:paddingTop="@dimen/feed_margin" android:paddingRight="@dimen/feed_margin" android:paddingBottom="@dimen/feed_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topic="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/post_content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/topic_list_item_content" />
+    <include android:id="@id/gif_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_margin" android:layout_below="@id/post_content" layout="@layout/post_gif_player" />
+    <com.ss.android.article.common.ThumbGridLayout android:id="@id/thumb_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_margin" android:layout_below="@id/post_content" topic:thumbColumn="3" topic:thumbVSpacing="@dimen/item_grid_thumb_padding" topic:thumbHSpacing="@dimen/item_grid_thumb_padding" />
+    <include android:id="@id/group_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/feed_margin" android:layout_below="@id/post_content" layout="@layout/post_group_container" />
+</RelativeLayout>

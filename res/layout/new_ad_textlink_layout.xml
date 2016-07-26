@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ad_textlink_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" style="@style/detail_ad_label" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/detail_ad_textlink_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/ad_textlink_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+</merge>

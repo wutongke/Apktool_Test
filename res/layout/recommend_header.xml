@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/title_bar" style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_recommend" android:layout_centerInParent="true" style="@style/title_text_style" />
+    <TextView android:id="@id/back" style="@style/recommend_back_reverse_view" />
+</RelativeLayout>

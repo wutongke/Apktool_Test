@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/ll_panel" android:layout_width="@dimen/audio_record_tip_length" android:layout_height="@dimen/audio_record_tip_length">
+        <ImageView android:id="@id/iv_record_icon" android:layout_width="68.0dip" android:layout_height="68.0dip" android:layout_marginLeft="41.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="41.0dip" android:layout_marginBottom="21.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="80.0sp" android:gravity="center" android:id="@id/tv_record_time" android:visibility="gone" android:layout_width="68.0dip" android:layout_height="120.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/tv_record_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

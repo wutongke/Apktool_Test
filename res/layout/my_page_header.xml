@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/my_page_background" android:layout_width="fill_parent" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/blur_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/my_page_shade_layer" android:background="@color/my_page_head_shader_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/usr_info_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.ss.android.article.base.ui.CircularImageView android:id="@id/user_avatar_iv" android:clickable="false" android:layout_width="@dimen/my_page_max_avatar_size" android:layout_height="@dimen/my_page_max_avatar_size" android:src="@drawable/big_defaulthead_head" android:layout_centerInParent="true" app:border_width="1.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi10" android:ellipsize="end" android:gravity="center" android:id="@id/user_name_tv" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="30.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <ViewStub android:id="@id/login_layout_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi3" android:gravity="center_horizontal" android:id="@id/tv_report_contact" android:paddingBottom="24.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/report_contact" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_report_contact" android:layout_below="@id/title_bar">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/report_options" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/ssxinzi1" android:textColorHint="@color/report_edit_hint_color" android:gravity="center|left|top" android:id="@id/content" android:background="@drawable/report_edit_bg" android:padding="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:minHeight="80.0dip" android:hint="@string/report_edit_hint_text" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gallery_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/banner_default" android:scaleType="fitStart" android:adjustViewBounds="true" />
+    <com.ss.android.common.ui.view.InScrollViewPager android:id="@id/pager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/gallery_placeholder" android:layout_alignTop="@id/gallery_placeholder" android:layout_alignRight="@id/gallery_placeholder" android:layout_alignBottom="@id/gallery_placeholder" />
+    <LinearLayout android:id="@id/dot_placeholder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/gallery_placeholder">
+        <LinearLayout android:gravity="center" android:id="@id/dot_container" android:background="@color/dot_bg" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ss.android.common.ui.view.DotImageView android:id="@id/dot_imageview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/gallery_placeholder" />
+    <include android:id="@id/list_placeholder" layout="@layout/recommend_tail" />
+</RelativeLayout>

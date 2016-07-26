@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/back" style="@style/back_view" />
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_feedback" android:layout_centerInParent="true" style="@style/title_text_style" />
+    <TextView android:id="@id/right_text" android:visibility="gone" android:text="@string/label_send" android:layout_alignParentRight="true" style="@style/title_bar_button" />
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.ui.DuplicatePressedRelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false" style="@style/Clickable">
+        <LinearLayout android:orientation="vertical" android:id="@id/contents_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/top_recommend_stub" android:layout="@layout/ugc_recommend_layout" android:inflatedId="@id/recommend_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/ugc_feed_top_margin" />
+            <ViewStub android:id="@id/top_source_layout_stub" android:layout="@layout/movie_top_source_layout" android:inflatedId="@id/top_source_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/ugc_feed_source_to_recomment_margin" />
+            <TextView android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/ugc_feed_title_margin_top" android:layout_marginRight="@dimen/feed_item_horizontal_margin" android:maxLines="3" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/ugc_text_line_spacing" style="@style/ugc_feed_item_title" />
+            <TextView android:id="@id/abstract_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginRight="@dimen/feed_item_horizontal_margin" android:maxLines="3" style="@style/ugc_item_abstract" />
+            <FrameLayout android:id="@id/attach_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ss.android.article.common.ThumbGridLayout android:id="@id/thumb_container" android:visibility="gone" style="@style/post_item_thumb_container" />
+                <include android:id="@id/gif_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/post_item_gif_container" layout="@layout/post_gif_player" />
+                <include android:id="@id/group_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/post_item_group_container" layout="@layout/post_group_container" />
+                <include android:id="@id/forward_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/post_item_forward_container" layout="@layout/post_forward_container" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/comment_container" android:background="@color/reply_list_bg" android:padding="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/feed_item_horizontal_margin" android:layout_marginBottom="-4.0dip" android:layout_below="@id/abstract_desc" />
+            <TextView android:id="@id/show_more_comment" android:background="@color/reply_list_bg" android:visibility="gone" android:layout_marginTop="-7.0dip" style="@style/post_item_show_more_comment" />
+            <ViewStub android:id="@id/info_layout_stub" android:layout="@layout/ugc_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="@dimen/ugc_feed_info_to_comment_margin" android:layout_marginRight="15.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/divider" android:background="@color/feed_list_divider_color" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="13.0dip" android:layout_below="@id/contents_wrapper" />
+    </com.ss.android.article.base.ui.DuplicatePressedRelativeLayout>
+</LinearLayout>

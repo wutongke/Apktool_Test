@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.common.NightModeAsyncImageView android:layout_width="@dimen/avatar_width_small" android:layout_height="@dimen/avatar_height_small" android:layout_marginLeft="8.0dip" tt:placeholderImage="@color/bg_place_holder" tt:roundAsCircle="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tt="http://schemas.android.com/apk/res-auto" />

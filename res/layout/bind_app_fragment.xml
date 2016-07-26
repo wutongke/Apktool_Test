@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/guide_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_weight="0.0">
+        <ImageView android:padding="6.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/guide_download_check" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/guide_download_btn_text" android:id="@id/hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/guide_start_btn_text" android:gravity="center" android:id="@id/start_btn" android:background="@drawable/guide_start_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:minWidth="200.0dip" android:layout_weight="0.0" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian4" android:paddingLeft="@dimen/list_item_horizontal_outside_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/video_repost_in_no_digg" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/video_info_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/video_comments_info" android:gravity="center_vertical" android:id="@id/video_source_in_no_digg" android:paddingTop="@dimen/video_digg_padding_top" android:paddingBottom="@dimen/video_digg_padding_bottom_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/video_comments_info" android:gravity="center_vertical" android:id="@id/video_duration_in_no_digg" android:paddingTop="@dimen/video_digg_padding_top" android:paddingBottom="@dimen/video_digg_padding_bottom_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/video_comments_info" android:gravity="center_vertical" android:id="@id/video_comment_in_no_digg" android:paddingTop="@dimen/video_digg_padding_top" android:paddingBottom="@dimen/video_digg_padding_bottom_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="40.0dip" android:drawableLeft="@drawable/video_cover_comm_count" android:drawablePadding="4.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageButton android:id="@id/video_repost_in_no_digg" android:background="@null" android:paddingTop="@dimen/video_digg_padding_top" android:paddingRight="@dimen/list_item_horizontal_outside_padding" android:paddingBottom="@dimen/video_digg_padding_bottom_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_cover_comm_repost" android:layout_alignParentRight="true" />
+</RelativeLayout>

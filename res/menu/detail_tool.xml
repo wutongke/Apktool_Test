@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_write" android:id="@id/menu_write" android:showAsAction="always" />
+    <item android:icon="@drawable/titlebar_review" android:id="@id/menu_comment" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_report" android:id="@id/menu_repost" android:showAsAction="always" />
+    <item android:id="@id/menu_dislike" android:title="@string/detail_feedback_item_dislike" />
+    <item android:id="@id/menu_report" android:title="@string/detail_feedback_item_report" />
+    <item android:id="@id/menu_garbage" android:title="@string/detail_feedback_item_garbage" />
+</menu>

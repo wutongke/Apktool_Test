@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/update_item_forward_layout_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <ScrollView android:id="@id/scroll_comment_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip">
+                <EditText android:textSize="16.0sp" android:textColor="@color/update_item_forward_edittext_color" android:textColorHint="@color/update_item_forward_edittext_hint_color" android:gravity="top" android:id="@id/comment_edittext" android:background="@null" android:paddingLeft="@dimen/forward_layout_margin" android:paddingTop="@dimen/forward_layout_margin" android:paddingRight="@dimen/forward_layout_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/update_item_forward_edittext_hint" android:minLines="3" android:lineSpacingExtra="5.0dip" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/info_layout" android:background="@color/update_item_forward_info_layout_bg_color" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/forward_layout_margin" android:layout_marginRight="@dimen/forward_layout_margin" android:layout_marginBottom="@dimen/forward_layout_margin">
+                <ImageView android:id="@id/author_avatar" android:layout_width="63.0dip" android:layout_height="63.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/ss_favor_icon" android:scaleType="fitXY" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/article_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/author_avatar" android:layout_centerVertical="true">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/update_item_forward_authorname_color" android:ellipsize="end" android:id="@id/author_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="用户名" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/update_item_forward_content_color" android:ellipsize="end" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

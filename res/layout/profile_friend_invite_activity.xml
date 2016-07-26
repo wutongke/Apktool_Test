@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/social_friend_list_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/social_title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/profile_invite_weixin" style="@style/profile_friend_invite_layout">
+                <View android:id="@id/profile_friend_weixin_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_friend_weixin_divider" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/profile_friend_weixin_icon" android:src="@drawable/noticeable_weixin" style="@style/profile_friend_invite_icon" />
+                    <TextView android:id="@id/profile_friend_weixin_text" android:text="@string/profile_friend_invite_weixin" android:layout_toRightOf="@id/profile_friend_weixin_icon" style="@style/profile_friend_invite_name" />
+                    <ImageView android:id="@id/profile_friend_weixin_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/profile_friend_invite_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/profile_invite_message" android:layout_below="@id/profile_invite_weixin" style="@style/profile_friend_invite_layout">
+                <View android:id="@id/profile_friend_message_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_friend_message_divider" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/profile_friend_message_icon" android:src="@drawable/noticeable_message" style="@style/profile_friend_invite_icon" />
+                    <TextView android:id="@id/profile_friend_message_text" android:text="@string/profile_friend_invite_message" android:layout_toRightOf="@id/profile_friend_message_icon" style="@style/profile_friend_invite_name" />
+                    <ImageView android:id="@id/profile_friend_message_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/profile_friend_invite_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/profile_invite_mail" android:layout_below="@id/profile_invite_message" style="@style/profile_friend_invite_layout">
+                <View android:id="@id/profile_friend_mail_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/profile_friend_mail_divider" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/profile_friend_mail_icon" android:src="@drawable/noticeable_mail" style="@style/profile_friend_invite_icon" />
+                    <TextView android:id="@id/profile_friend_mail_text" android:text="@string/profile_friend_invite_mail" android:layout_toRightOf="@id/profile_friend_mail_icon" style="@style/profile_friend_invite_name" />
+                    <ImageView android:id="@id/profile_friend_mail_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/profile_friend_invite_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/hwpush_favicon" android:focusable="false" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="6.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <CheckBox android:gravity="center_vertical" android:id="@id/hwpush_delCheck" android:focusable="false" android:visibility="invisible" android:clickable="false" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/hwpush_selfshowmsg_layout" android:paddingLeft="14.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/hwpush_delCheck" android:layout_toRightOf="@id/hwpush_favicon">
+        <TextView android:textSize="14.0sp" android:typeface="sans" android:textColor="@color/hwpush_text_color_snapshot_title" android:ellipsize="end" android:id="@id/hwpush_selfshowmsg_title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:singleLine="true" />
+        <TextView android:textSize="11.0sp" android:typeface="sans" android:textColor="@color/hwpush_text_color_history_url" android:ellipsize="end" android:id="@id/hwpush_selfshowmsg_content" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="6.0dip" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

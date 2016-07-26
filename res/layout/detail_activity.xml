@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/detail_activity"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/detail_title_bar" />
+    <RelativeLayout android:id="@id/info_title_bar" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" style="@style/detail_title_bar_style">
+        <TextView android:textSize="16.0sp" android:textColor="@drawable/btn_detail_title_bar_back" android:id="@id/info_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/close" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/detail_title_bar_url" android:ellipsize="end" android:gravity="center" android:id="@id/info_title" android:paddingLeft="50.0dip" android:paddingRight="50.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </RelativeLayout>
+    <View android:id="@id/title_bar_divider" android:background="@color/detail_divider" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_divider_height" android:layout_below="@id/title_bar" />
+    <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_bar" android:layout_below="@id/title_bar_divider">
+        <FrameLayout android:id="@id/transformer_container" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/detail_page" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/detail_page" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <ProgressBar android:id="@id/ss_htmlprogessbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:layout_below="@id/title_bar" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" android:layout_below="@id/title_bar">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_notify_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/notify_view_cancel_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/notify_view_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/notify_view_divider" />
+            <TextView android:id="@id/notify_view_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/list_notify_cancel_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.ss.android.common.ui.view.FullscreenVideoFrame android:id="@id/customview_layout" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/top_video_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <SurfaceView android:id="@id/hack_surface_view_flicker" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px" />
+</RelativeLayout>

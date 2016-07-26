@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.common.NightModeAsyncImageView android:id="@id/right_image" android:layout_width="@dimen/card_right_image_size" android:layout_height="@dimen/card_right_image_size" fresco:backgroundImage="@drawable/simple_image_holder_listpage"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto" />

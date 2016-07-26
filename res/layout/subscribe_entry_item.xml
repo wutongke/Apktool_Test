@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/icon_container" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon" android:layout_width="@dimen/subscribe_avatar_list_size" android:layout_height="@dimen/subscribe_avatar_list_size" android:layout_marginTop="9.0dip" android:layout_marginRight="9.0dip" android:scaleType="fitXY" />
+            <com.ss.android.article.base.ui.TagView android:layout_gravity="center_horizontal" android:id="@id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="3.0dip" />
+        </FrameLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/entry_subscribe_list_item_desc" android:id="@id/last_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/entry_subscribe_list_item_name" android:ellipsize="end" android:id="@id/entry_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:singleLine="true" android:layout_toLeftOf="@id/last_time" android:layout_toRightOf="@id/icon_container" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/entry_subscribe_list_item_desc" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/entry_name" android:layout_alignLeft="@id/entry_name" />
+    </RelativeLayout>
+    <ImageView android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/list_item_horizontal_outside_padding" android:layout_marginRight="@dimen/list_item_horizontal_outside_padding" />
+</LinearLayout>

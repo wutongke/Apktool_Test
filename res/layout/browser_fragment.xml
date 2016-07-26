@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.newmedia.webview.SSWebView android:id="@id/ss_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/ss_htmlprogessbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:max="100" android:indeterminateOnly="false" android:progressDrawable="@drawable/progress_bar" android:layout_alignParentTop="true" />
+    <com.ss.android.common.ui.view.FullscreenVideoFrame android:id="@id/customview_layout" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/download_status_bar" android:background="@color/detail_download_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/detail_download_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+        <ProgressBar android:id="@id/download_progress" android:layout_width="132.0dip" android:layout_height="32.0dip" android:max="100" android:layout_centerInParent="true" style="@style/appad_detail_download_progress_bar" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/detail_download_white" android:gravity="center" android:id="@id/download_status" android:background="@drawable/detail_download_bg" android:layout_width="132.0dip" android:layout_height="32.0dip" android:text="@string/detail_download" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

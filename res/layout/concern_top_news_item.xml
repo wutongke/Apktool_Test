@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top_news_item_container" android:background="@drawable/concern_list_item_bg" android:paddingLeft="@dimen/conern_list_horizontal_padding" android:paddingRight="@dimen/conern_list_horizontal_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tt="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_news_item_divider_line" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/top_news_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:maxLines="2" android:layout_toLeftOf="@id/top_news_item_image" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/top_news_item_image" android:layout_width="72.0dip" android:layout_height="47.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" tt:placeholderImage="@color/ssxinmian3" tt:actualImageScaleType="centerCrop" />
+    </RelativeLayout>
+    <View android:id="@id/top_post_item_bottom_line" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignParentBottom="true" />
+</LinearLayout>

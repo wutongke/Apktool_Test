@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_post_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/operations" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/more_dynamic" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/zi5" android:id="@id/manage_tv" android:paddingLeft="15.0dip" android:paddingTop="14.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/concern_manage" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi5" android:id="@id/resend_btn" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="15.0dip" android:text="@string/resend" android:drawableRight="@drawable/warning_tipic_details" android:drawablePadding="2.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/user_avatar" style="@style/post_item_avatar" />
+    <com.ss.android.article.base.ui.PriorityLinearLayout android:id="@id/user_role_container" android:layout_marginTop="-1.5dip" android:layout_toLeftOf="@id/operations" android:layout_toRightOf="@id/user_avatar" android:layout_below="@id/stub_divider" android:layout_alignTop="@id/user_avatar" style="@style/post_item_user_layout" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:id="@id/user_name" android:layout_centerVertical="true" app:pll_measure_priority="0" app:pll_layout_order="0" style="@style/post_item_user_name" />
+    </com.ss.android.article.base.ui.PriorityLinearLayout>
+    <TextView android:textColor="@color/ssxinzi4" android:id="@id/reason" android:layout_toRightOf="@id/user_avatar" android:layout_below="@id/user_role_container" style="@style/post_item_reason" />
+    <TextView android:id="@id/publish_date" android:layout_toRightOf="@id/reason" android:layout_below="@id/user_role_container" style="@style/post_item_publish_date" />
+    <TextView android:id="@id/post_title" android:layout_below="@id/user_avatar" style="@style/post_item_content.feed_title" />
+    <TextView android:id="@id/post_content" android:layout_below="@id/post_title" style="@style/post_item_content.feed" />
+    <FrameLayout android:id="@id/attach_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/post_content">
+        <com.ss.android.article.common.ThumbGridLayout android:id="@id/thumb_container" style="@style/post_item_thumb_container" />
+        <include android:id="@id/gif_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/post_content" style="@style/post_item_gif_container" layout="@layout/post_gif_player" />
+        <include android:id="@id/group_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/post_item_group_container" layout="@layout/post_group_container" />
+        <include android:id="@id/forward_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/post_item_forward_container" layout="@layout/post_forward_container" />
+    </FrameLayout>
+    <TextView android:id="@id/location" style="@style/post_item_location" />
+    <com.bytedance.article.common.utility.view.DrawableCenterTextView android:id="@id/repost_btn" android:layout_marginBottom="7.0dip" android:text="@string/repost" android:layout_below="@id/show_more_comment" style="@style/post_item_repost_btn" />
+    <com.bytedance.article.common.utility.view.DrawableCenterTextView android:id="@id/comment_btn" android:layout_marginBottom="7.0dip" android:text="@string/comment" android:layout_below="@id/show_more_comment" style="@style/post_item_comment_btn" />
+    <com.bytedance.article.common.utility.view.DrawableCenterTextView android:id="@id/digg_btn" android:layout_marginBottom="7.0dip" android:text="@string/digg" android:layout_toLeftOf="@id/comment_btn" android:layout_below="@id/show_more_comment" style="@style/post_item_digg_btn" />
+    <com.ss.android.action.ActionAnimView android:id="@id/digg_anim" android:layout_toLeftOf="@id/comment_btn" android:layout_below="@id/show_more_comment" style="@style/anim_increase_view.post" />
+    <LinearLayout android:id="@id/comment_container" android:layout_below="@id/location" style="@style/post_item_comment_container" />
+    <TextView android:id="@id/show_more_comment" android:layout_marginTop="-7.0dip" style="@style/post_item_show_more_comment" />
+</RelativeLayout>

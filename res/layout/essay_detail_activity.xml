@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/detail_activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ss_write_comment_layout" android:paddingLeft="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true" style="@style/comment_write_layout">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/bottom_vertical_line" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="21.0dip" style="@style/comment_vertical_line" />
+            <ImageView android:id="@id/ss_write_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/comment_write_icon" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:id="@id/ss_write_comment" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="30.0dip" android:includeFontPadding="false" style="@style/comment_write_input" />
+    </LinearLayout>
+    <ImageView android:id="@id/comment_vertical_line" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_above="@id/ss_write_comment_layout" android:layout_below="@id/title_bar" style="@style/comment_vertical_line" />
+    <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_bar" android:layout_below="@id/title_bar">
+        <ListView android:id="@id/ss_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ss_comment_list" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <RelativeLayout android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" android:layout_below="@id/title_bar">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:layout_width="fill_parent" style="@style/list_notify_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/notify_view_cancel_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/notify_view_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/notify_view_divider" />
+            <TextView android:id="@id/notify_view_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/list_notify_cancel_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

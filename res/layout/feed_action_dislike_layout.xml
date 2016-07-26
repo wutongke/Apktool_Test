@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_layout" android:background="@color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dislike_dialog_title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/ssxinzi2" android:id="@id/dislike_dialog_title" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dislike_dlg_title_no_selected_items" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi7" android:gravity="center" android:id="@id/title_ok_btn" android:background="@drawable/dislike_title_btn_background_selector" android:layout_width="100.0dip" android:layout_height="30.0dip" android:text="@string/dislike_dlg_btn_delete" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.ss.android.article.base.ui.UnscrollableGridView android:id="@id/dislike_item_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:horizontalSpacing="6.0dip" android:verticalSpacing="6.0dip" android:stretchMode="columnWidth" android:numColumns="2" />
+</LinearLayout>

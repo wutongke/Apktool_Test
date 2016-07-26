@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.base.app.Article91Widget android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_bar" android:background="@drawable/widget_titlebar" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/title_icon" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:drawableLeft="@drawable/widget_title" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="0.0">
+            <ImageView android:layout_gravity="center" android:id="@id/refresh" android:background="#00000000" android:visibility="invisible" android:src="@drawable/ic_widget_refresh" style="@style/widget_button" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" style="?android:attr/progressBarStyleSmall" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:background="@drawable/widget_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/article_91widget_row_bg" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:minHeight="20.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff4e4e4e" android:layout_gravity="center" android:id="@id/error_info" android:padding="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/widget_error_info" />
+        <TextView android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/widget_error_info_no_network" style="@style/list_notify_view" />
+    </FrameLayout>
+</com.ss.android.article.base.app.Article91Widget>

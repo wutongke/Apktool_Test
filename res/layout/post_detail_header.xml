@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ssxinmian14" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/forum_avatar" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/ssxinzi5" android:ellipsize="end" android:id="@id/forum_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/forum_avatar" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi1" android:id="@id/forum_post_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:drawableRight="@drawable/right_arrow_topic" android:drawablePadding="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/follow_btn_text_color" android:gravity="center" android:id="@id/follow_btn" android:background="@drawable/follow_button_selector" android:visibility="gone" android:layout_width="52.0dip" android:layout_height="28.0dip" android:layout_marginLeft="57.0dip" android:layout_marginRight="15.0dip" android:text="@string/follow_forum" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

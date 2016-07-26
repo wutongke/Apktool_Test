@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/list_item_horizontal_outside_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.base.ui.PriorityLinearLayout android:id="@id/ugc_title_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/action" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi4" android:ellipsize="end" android:id="@id/header" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" app:pll_measure_priority="1" app:pll_layout_order="0" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="6.0dip" android:singleLine="true" android:layout_centerVertical="true" app:pll_measure_priority="0" app:pll_layout_order="1" />
+    </com.ss.android.article.base.ui.PriorityLinearLayout>
+    <ImageView android:id="@id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ugc_action_style" />
+</RelativeLayout>

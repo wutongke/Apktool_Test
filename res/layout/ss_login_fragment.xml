@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ss_login_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/share_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip" />
+    <FrameLayout android:id="@id/tip_why" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/share_buttons">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="15.0dip">
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <ImageView android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tip_why_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ss_login_why" style="@style/ss_tip_why_auth" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ff333333" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/tip_why" android:layout_centerHorizontal="true">
+        <TextView android:gravity="left" android:padding="5.0dip" android:text="@string/ss_login_why_0" style="@style/ss_text_tip" />
+        <TextView android:gravity="left" android:padding="5.0dip" android:text="@string/ss_login_why_1" style="@style/ss_text_tip" />
+        <TextView android:gravity="left" android:padding="5.0dip" android:text="@string/ss_login_why_2" style="@style/ss_text_tip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/license_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/drawer_profile_info_text" android:id="@id/agree_selected_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_drawer_profile_agree" android:drawableLeft="@drawable/login_agree_icon" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/login_fragment_deal_text" android:id="@id/deal_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_drawer_profile_deal" />
+    </LinearLayout>
+    <com.ss.android.common.ui.view.DotIndicator android:gravity="center" android:id="@id/pager_bottom_shower" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/license_layout" style="@style/why_indicator" />
+    <com.ss.android.common.ui.view.SSViewPager android:id="@id/why_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/pager_bottom_shower" android:layout_below="@id/tip_why" />
+</RelativeLayout>

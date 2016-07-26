@@ -1,0 +1,80 @@
+ <script id="comment_item_tmpl" type="text/x-jquery-tmpl">
+ <tr>
+    <td>
+    <div class="comment_content">
+        <div class="avatar"><a href="bytedance://user_profile?user_id={#user_id#}"><img alt_src="{#user_avatar#}"></a></div>
+        <span class="name {#vip#}"><a href="bytedance://user_profile?user_id={#user_id#}">{#user_name#}</a></span> 
+        <span class="time">{#time#}</span> 
+        <span class="content"><a href="#" onClick="commentActionPop(this); return false;">{#content#}</a></span> 
+        <span class="action_pane"><a class="action {#user_action#}" comment_id="{#comment_id#}"  bury_count="{#bury_count#}" href="#" onClick="commentDigg(this); return false;">{#digg_count#}</a></span>
+    </div>
+    </td>
+  </tr>
+</script>
+    <table class="comment_list" cellpadding="0" cellspacing="0" border="0" id="friend_comments"> 
+    <thead>
+      <tr>
+        <td>
+            <div class="comment_header">
+                <div class="comment_header_bubble"></div>
+                <h3> 好友评论 </h3>
+            </div>
+        </td>
+      </tr>
+    </thead>      
+    <tbody>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                <a class="more_comments_btn" href="#" onClick="comments.loadMore(this,'friend_comments'); return false;">更多好友评论</a>
+                <a class="more_comments_btn fail" href="#" onClick="comments.loadMore(this,'friend_comments'); return false;">点击重新加载</a>
+            </td>
+        </tr>
+    </tfoot>   
+  </table>  
+    <table class="comment_list" cellpadding="0" cellspacing="0" border="0" id="hot_comments"> 
+    <thead>
+      <tr>
+        <td>
+            <div class="comment_header">
+                <div class="comment_header_bubble"></div>
+                <h3> 热门评论 </h3>
+            </div>
+        </td>
+      </tr>
+    </thead>      
+    <tbody>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                <a class="more_comments_btn" href="#" onClick="comments.loadMore(this,'hot_comments'); return false;">更多热门评论</a>
+                <a class="more_comments_btn fail" href="#" onClick="comments.loadMore(this,'hot_comments'); return false;">点击重新加载</a>
+            </td>
+        </tr>
+    </tfoot>   
+  </table>
+      <table class="comment_list" cellpadding="0" cellspacing="0" border="0" id="new_comments"> 
+    <thead>
+      <tr>
+        <td>
+            <div class="comment_header">
+                <div class="comment_header_bubble"></div>
+                <h3> 最新评论 </h3>
+            </div>
+        </td>
+      </tr>
+    </thead>      
+    <tbody>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>
+                <a class="more_comments_btn" href="#" onClick="comments.loadMore(this,'new_comments'); return false;">更多最新评论</a>
+                <a class="more_comments_btn fail" href="#" onClick="comments.loadMore(this,'new_comments'); return false;">点击重新加载</a>
+            </td>
+        </tr>
+    </tfoot>   
+  </table>
+    <a class="all_comments_reload fail" onClick="comments.allFailReload(this); return false;">点击重新加载评论</a>

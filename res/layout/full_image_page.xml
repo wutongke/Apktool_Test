@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/full_image_root" android:background="@drawable/bg_full_image" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.imagezoom.ImageViewTouch android:id="@id/full_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/thumb_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+    <TextView android:id="@id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/full_image_progress_text" />
+    <ProgressBar android:id="@id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/full_image_progressbar" />
+    <TextView android:gravity="center" android:id="@id/retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry_large_image" android:drawableTop="@drawable/ic_full_image_failed" android:layout_centerInParent="true" style="@style/full_image_retry_text" />
+</RelativeLayout>

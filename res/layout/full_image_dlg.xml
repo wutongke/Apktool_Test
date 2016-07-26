@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/full_image_root" android:background="@drawable/bg_full_image" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.ImageViewTouchViewPager android:id="@id/image_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/save_textview" android:background="@drawable/large_image_dialog_page_number_bg" android:layout_width="50.0dip" android:layout_height="28.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/save_image" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/page_number" android:background="@drawable/large_image_dialog_page_number_bg" android:layout_width="50.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

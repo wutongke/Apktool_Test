@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_for_recommend_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/divider_0" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <ImageView android:id="@id/divider" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="10.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="0.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/number" android:background="@drawable/shape_rectange_rounded" android:paddingLeft="4.0dip" android:paddingTop="0.0dip" android:paddingRight="4.0dip" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/arrow" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_arrow" android:adjustViewBounds="true" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

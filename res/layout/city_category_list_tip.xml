@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tip_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Clickable">
+        <TextView android:textSize="12.0sp" android:textColor="@color/list_city_category_tip_text" android:gravity="center" android:layout_gravity="center" android:id="@id/chose_city_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="30.0dip" android:text="@string/city_category_list_header" android:drawableRight="@drawable/ic_city_native" android:drawablePadding="6.0dip" />
+        <View android:id="@id/choose_city_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/list_city_category_hint_text" android:layout_gravity="center_horizontal" android:id="@id/choose_city_hint" android:paddingTop="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/city_category_list_hint" android:drawableTop="@drawable/arrow_channel" android:drawablePadding="12.0dip" />
+    </LinearLayout>
+</FrameLayout>

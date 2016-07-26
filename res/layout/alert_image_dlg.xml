@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/content_layout" android:background="@drawable/alert_image_dlg_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+        <ImageView android:id="@id/alert_image" android:layout_width="@dimen/alert_image_width" android:layout_height="@dimen/alert_image_height" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/alert_image_dlg_btn" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/alert_image_confirm_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:minHeight="36.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-11.0dip" android:src="@drawable/alert_image_cancel_btn" android:layout_toRightOf="@id/content_layout" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/subscribe_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="130.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/not_article_loading" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/subscribe_empty_view_hint_text_color" android:id="@id/subscribe_hint_above_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="2.0dip" android:text="@string/subscribe_hint_text_1" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/subscribe_empty_view_hint_text_color" android:id="@id/subscribe_hint_below_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subscribe_hint_text_2" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/subscribe_btn_layout" android:background="@drawable/bg_subscribe_fragment_list_header" android:layout_width="80.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="15.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/subscribe_text_color" android:gravity="center_vertical" android:id="@id/subscribe_btn" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="@string/add_pgc_subscribe" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

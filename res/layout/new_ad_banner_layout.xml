@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:paddingTop="@dimen/detail_info_padding" android:paddingBottom="@dimen/detail_info_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/ad_banner_image" android:layout_width="@dimen/detail_ad_banner_img_size" android:layout_height="@dimen/detail_ad_banner_img_size" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:actualImageScaleType="fitXY" app:backgroundImage="@drawable/detail_ad_banner_img_bg" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/detail_ad_banner_title" android:ellipsize="end" android:id="@id/ad_banner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/ad_banner_image" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/detail_ad_banner_desc" android:ellipsize="end" android:id="@id/ad_banner_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/ad_banner_image" android:layout_below="@id/ad_banner_title" android:lineSpacingExtra="1.0dip" />
+    </RelativeLayout>
+    <TextView android:id="@id/ad_banner_label" android:background="@drawable/detail_ad_taobao_image_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/detail_ad_label" />
+</merge>

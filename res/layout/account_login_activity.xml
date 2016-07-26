@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.account.customview.slidingdrawer.SuperSlidingDrawer android:id="@id/drawer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:drawer_handle="@id/handle" app:drawer_content="@id/content" app:drawer_orientation="bottomUp" app:drawer_collapsedOffset="@dimen/account_login_btn_height" app:drawer_allowSingleTap="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/handle" android:background="@drawable/account_handle_bg" android:layout_width="fill_parent" android:layout_height="@dimen/account_drawer_handle_height">
+        <ImageView android:id="@id/img_back" android:visibility="gone" android:layout_width="92.0px" android:layout_height="92.0px" android:src="@drawable/leftbackicon_sdk_login" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/img_close" android:layout_width="92.0px" android:layout_height="92.0px" android:src="@drawable/close_sdk_login" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/content" android:background="@color/account_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ss.android.account.customview.slidingdrawer.SuperSlidingDrawer>

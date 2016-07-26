@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/title_bar_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/back" style="@style/back_view" />
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/title_text_style" />
+    <TextView android:id="@id/right_text" android:visibility="gone" android:layout_alignParentRight="true" style="@style/title_bar_button" />
+    <TextView android:id="@id/top_more_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentRight="true" style="@style/detail_more_title_view" />
+    <RelativeLayout android:id="@id/search_layout" android:background="@drawable/bg_detail_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/top_more_title" android:layout_toRightOf="@id/back" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:src="@drawable/detail_search_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi1" android:id="@id/search_source_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/right_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:indeterminateOnly="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall" />
+</RelativeLayout>

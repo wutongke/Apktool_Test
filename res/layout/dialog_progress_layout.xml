@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="140.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="18.0dip" android:layout_marginBottom="15.0dip" android:indeterminateDrawable="@drawable/ptr_progress" />
+    <TextView android:textSize="14.0sp" android:layout_gravity="center_horizontal" android:id="@id/progress_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="图片上传中..." />
+</LinearLayout>

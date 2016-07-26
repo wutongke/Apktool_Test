@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/fold_layout_top_divider_line" android:background="@color/ssxinxian1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/folder_answer_tv_container" android:background="@drawable/mian4" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/fold_layout_top_divider_line">
+        <com.bytedance.article.common.utility.view.DrawableCenterTextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:id="@id/folder_answer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="16个回答被折叠" android:layout_centerVertical="true" />
+        <ImageView android:background="@drawable/right_arrow_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/fold_reason_layout" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_below="@id/folder_answer_tv_container">
+        <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi5" android:id="@id/fold_reason_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_margin" android:layout_marginTop="10.0dip" android:text="@string/answer_fold_reason" android:layout_below="@id/fold_reason_top_divider" android:layout_alignParentLeft="true" />
+        <View android:id="@id/fold_reason_top_divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <View android:id="@id/fold_reason_bottom_divider" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/fold_reason_tv" />
+    </RelativeLayout>
+</RelativeLayout>

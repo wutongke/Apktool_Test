@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/taobao_xp_rootId" android:tag="view_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/taobao_xp_group_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionbar">
+        <com.taobao.newxp.view.common.BaseGroupWebview android:id="@id/taobao_xp_webview_top" android:tag="webview_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.taobao.newxp.view.common.SlideViewPager android:id="@id/taobao_xp_viewpager_center" android:tag="viewpager_center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.taobao.newxp.view.common.BaseGroupWebview android:id="@id/taobao_xp_webview_bottom" android:tag="webview_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/taobao_xp_progressbar" android:tag="progressbar" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:indeterminateDrawable="@null" android:progressDrawable="@drawable/progressbar_drawable" style="?android:attr/progressBarStyleHorizontal" />
+    <com.taobao.newxp.view.common.SlideRelativeLayout android:id="@id/taobao_xp_right_layout" android:tag="right_layout" android:background="#50000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/actionbar" android:layout_alignParentRight="true">
+        <com.taobao.newxp.view.common.BaseGroupWebview android:id="@id/taobao_xp_webview_right" android:tag="webview_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </com.taobao.newxp.view.common.SlideRelativeLayout>
+    <com.taobao.newxp.view.common.SlideRelativeLayout android:id="@id/taobao_xp_left_layout" android:tag="left_layout" android:background="#50000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/actionbar" android:layout_alignParentLeft="true">
+        <com.taobao.newxp.view.common.BaseGroupWebview android:id="@id/taobao_xp_webview_left" android:tag="webview_left" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </com.taobao.newxp.view.common.SlideRelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/actionbar" android:tag="actionbar" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/action_back" android:tag="action_back" android:clickable="false" android:layout_width="fill_parent" android:layout_height="35.0dip" android:src="@drawable/taobao_xp_cm_selector_back" android:scaleType="fitCenter" android:layout_weight="1.0" android:alpha="0.3" />
+        <ImageView android:id="@id/action_forward" android:tag="action_forward" android:clickable="false" android:layout_width="fill_parent" android:layout_height="35.0dip" android:src="@drawable/taobao_xp_cm_selector_forward" android:scaleType="fitCenter" android:layout_weight="1.0" android:alpha="0.3" />
+        <ImageView android:id="@id/action_share" android:tag="action_share" android:clickable="false" android:layout_width="fill_parent" android:layout_height="35.0dip" android:scaleType="fitCenter" android:layout_weight="1.0" android:alpha="0.3" />
+        <ImageView android:id="@id/action_reflush" android:tag="action_reflush" android:layout_width="fill_parent" android:layout_height="35.0dip" android:src="@drawable/taobao_xp_cm_selector_reflush" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        <ImageView android:id="@id/action_close" android:tag="action_close" android:layout_width="fill_parent" android:layout_height="35.0dip" android:src="@drawable/taobao_xp_cm_selector_close" android:scaleType="fitCenter" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

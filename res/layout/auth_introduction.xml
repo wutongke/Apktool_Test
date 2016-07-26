@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/background_introduce_repeat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <ImageView android:id="@id/introduce_ordinary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_introduce_ordinary" />
+        <ImageView android:id="@id/btn_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:src="@drawable/btn_intro_mobile" />
+        <ImageView android:id="@id/btn_weixin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_weixin" />
+        <ImageView android:id="@id/btn_qzone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_qq" />
+        <ImageView android:id="@id/btn_weibo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_weibo" />
+        <ImageView android:id="@id/btn_renren" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_renren" />
+        <ImageView android:id="@id/btn_flyme" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_flyme" />
+        <ImageView android:id="@id/btn_huawei" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/btn_intro_huawei" />
+        <ImageView android:id="@id/close_introduction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:src="@drawable/title_introduce" />
+    </LinearLayout>
+</ScrollView>

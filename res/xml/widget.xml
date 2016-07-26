@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pandawidgets>
+    <pandawidget packageName="com.ss.android.article.news" layout="article_widget91" previewName="widget_preview" title="app_name" spanX="4" spanY="3" />
+</pandawidgets>

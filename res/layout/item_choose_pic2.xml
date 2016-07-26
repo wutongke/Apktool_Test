@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.topic.view.SquareRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@id/selected_image" android:background="@drawable/bg_select_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" app:actualImageScaleType="centerCrop" />
+    <TextView android:id="@id/delete_image" android:background="@drawable/closeicon_repost" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/selected_image" android:layout_alignRight="@id/selected_image" />
+    <ImageView android:id="@id/add_image" android:background="@drawable/bg_select_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/create_dongtai_center_cross_image" android:scaleType="center" />
+</com.ss.android.topic.view.SquareRelativeLayout>

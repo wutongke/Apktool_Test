@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/ss_title_bar" />
+    <RelativeLayout android:id="@id/question_layout" android:background="@drawable/mian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <com.ss.android.article.base.ui.EllipsisAppendSuffixTextView android:textSize="19.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/question_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="6.0dip" android:maxLines="2" android:includeFontPadding="false" android:layout_toLeftOf="@id/right_arrow" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/answer_person_num_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_below="@id/question_title" />
+        <View android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" android:layout_below="@id/answer_person_num_tv" />
+        <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/right_arrow_topic" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/question_layout" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi3" android:gravity="center" android:id="@id/answer_delete_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/answer_delete_hint" android:drawableTop="@drawable/delete_article_loading" android:drawablePadding="10.0dip" android:layout_below="@id/question_layout" android:layout_centerHorizontal="true" />
+    <com.ss.android.article.base.ui.LoadingFlashView android:layout_gravity="center" android:id="@id/empty_load_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

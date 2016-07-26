@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:state_pressed="true" android:color="@color/yejiantongyong1_pressed" />
+    <item android:state_selected="true" android:color="@color/yejiantongyong1" />
+    <item android:state_selected="false" android:state_pressed="true" android:color="@color/yejianlanse1_pressed" />
+    <item android:state_selected="false" android:color="@color/yejianlanse1" />
+</selector>

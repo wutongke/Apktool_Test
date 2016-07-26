@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.ui.GridViewWithHeaderAndFooter android:id="@id/related_picture_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="@dimen/pic_detail_related_picture_horizontal_gap" android:verticalSpacing="@dimen/pic_detail_related_picture_vertical_gap" android:numColumns="2" android:layout_centerInParent="true" />
+    <View android:background="@drawable/shadow_down_ablum" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

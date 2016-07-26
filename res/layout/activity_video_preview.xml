@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.livechat.media.camera.widget.VideoView android:id="@id/video_player_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/video_player_preview_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+    <com.ss.android.livechat.media.camera.widget.MediaToolbar android:layout_gravity="bottom" android:id="@id/video_preview_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

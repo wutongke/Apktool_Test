@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.ui.RangeSeekbar android:id="@id/range_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" seekbar:seekbarHeight="1.0dip" seekbar:textSize="10.0sp" seekbar:spaceBetween="15.0dip" seekbar:coordinateHeight="5.0dip" seekbar:clickRectHorizontalPadding="12.0dip" seekbar:clickRectVerticalPadding="5.0dip" seekbar:cursorBackground="@drawable/roll_typebar_details" seekbar:markTextArray="@array/fontsize_choices" seekbar:textColorNormal="@color/ssxinzi3" seekbar:textColorSelected="@color/ssxinzi3" seekbar:seekbarColorNormal="@color/ssxinmian6" seekbar:seekbarColorSelected="@color/ssxinmian6" xmlns:seekbar="http://schemas.android.com/apk/res-auto" />
+</merge>

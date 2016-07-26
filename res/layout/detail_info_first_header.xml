@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/article_detail_color" android:paddingLeft="@dimen/detail_ad_layout_padding" android:paddingRight="@dimen/detail_ad_layout_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/alert_text" android:paddingTop="18.0dip" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="5" />
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@id/like_share_layout" android:paddingTop="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-3.0dip" android:layout_marginRight="-3.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+            <com.ss.android.article.base.ui.DiggLayout android:id="@id/detail_like_ll" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0" app:type="listType" app:childGravity="center" app:bgResDay="@drawable/detail_like_btn_bg" />
+            <LinearLayout android:gravity="center" android:id="@id/detail_share_weixin_ll" android:background="@drawable/bg_detail_action_like" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0">
+                <TextView android:id="@id/detail_share_weixin_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_info_action_weixin" android:drawableLeft="@drawable/weixinicon_actionbar_details" style="@style/detail_action_text" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/detail_share_moment_ll" android:background="@drawable/bg_detail_action_like" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="1.0" style="@style/detail_action">
+                <TextView android:id="@id/detail_share_moment_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/detail_info_action_moments" android:drawableLeft="@drawable/pyqicon_actionbar_details" style="@style/detail_action_text" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:ellipsize="end" android:id="@id/like_friends_text" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" /> //相关问答
+<RelativeLayout android:id="@id/related_qa_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi2" android:id="@id/related_qa_section_text" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_related_qas" />
+        <View android:id="@id/related_qa_title_bottom_line" android:background="@drawable/comment_title_line_bg" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="8.0dip" android:layout_below="@id/related_qa_section_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/related_qa" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/related_qa_title_bottom_line" />
+    </RelativeLayout> //相关阅读
+<RelativeLayout android:id="@id/related_news_layout" android:background="@drawable/bg_detail_action" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <TextView android:id="@id/related_section_text" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/detail_related_news" style="@style/detail_info_section_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/related_news" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/related_section_text" />
+    </RelativeLayout> //相关图集
+<RelativeLayout android:id="@id/related_gallery_layout" android:background="@drawable/bg_detail_action" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <TextView android:id="@id/related_gallery_title" android:paddingTop="15.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detail_related_gallery" style="@style/detail_info_section_text" />
+        <com.ss.android.article.base.ui.StickyGridView android:id="@id/related_picture_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="3.0dip" android:verticalSpacing="@dimen/related_grid_view_vertical_spacing" android:numColumns="2" android:layout_below="@id/related_gallery_title" />
+    </RelativeLayout> //youku导流视频
+<RelativeLayout android:orientation="vertical" android:id="@id/video_layout" android:background="@drawable/bg_detail_action" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <RelativeLayout android:id="@id/video_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <View android:id="@id/video_title_bg_view" android:background="@drawable/video_title_bg_view_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentTop="true" />
+            <ImageView android:id="@id/video_image" android:background="@color/ssxinmian1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            <ImageView android:id="@id/ic_video" android:visibility="gone" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/playicon_video_selector" android:scaleType="center" android:layout_centerInParent="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi8" android:ellipsize="end" android:id="@id/video_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:maxLines="2" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </RelativeLayout> //相关视频
+<RelativeLayout android:id="@id/related_videos_layout" android:background="@drawable/bg_detail_action" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <TextView android:id="@id/related_videos_title" android:paddingTop="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/detail_related_video" style="@style/detail_info_section_text" />
+        <LinearLayout android:orientation="vertical" android:id="@id/related_videos_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/related_videos_title" />
+    </RelativeLayout> //相关专辑
+<LinearLayout android:orientation="vertical" android:id="@id/related_album_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/related_album_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout> //用于视频详情页的相关视频
+<LinearLayout android:orientation="vertical" android:id="@id/video_detail_related_videos_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/video_detail_related_videos_contents" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_detail_related_videos_more" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/zi2" android:id="@id/video_detail_more_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/look_more" android:drawableRight="@drawable/related_video_more" android:drawablePadding="3.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

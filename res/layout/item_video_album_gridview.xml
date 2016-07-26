@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.livechat.media.album.widget.ImageSquareGrideViewItem android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/photo_item_sec_pic">
+        <ImageView android:id="@id/video_album_grideview_item_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/video_album_grideview_item_image_select_cover" android:background="#33000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/video_album_grideview_item_select" android:padding="4.0dip" android:clickable="false" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <View android:id="@id/video_album_grideview_item_select_click_region" android:background="@null" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:background="@color/ssxinmian15" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/video_album_gridview_item_vedio_icon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/video_album_gridview_item_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/video_album_grideview_item_disable_bg" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ss.android.livechat.media.album.widget.ImageSquareGrideViewItem>

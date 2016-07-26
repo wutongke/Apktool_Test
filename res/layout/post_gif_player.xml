@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topic="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/content_image" android:layout_width="fill_parent" android:layout_height="wrap_content" topic:placeholderImage="@color/bg_place_holder" topic:actualImageScaleType="fitXY" />
+    <ImageView android:id="@id/gif_player" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/homepage_gif_player" android:layout_centerInParent="true" />
+</RelativeLayout>

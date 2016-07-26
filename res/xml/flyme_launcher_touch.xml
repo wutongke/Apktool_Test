@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launcher_menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <menu android:title="@string/flyme_launcher_search" data="snssdk143://search" icon="" />
+    <menu android:title="@string/flyme_launcher_gossip" data="snssdk143://gossip?fid=4534794731&amp;url=http://i.snssdk.com/2/wap/broke/" icon="" />
+</launcher_menu>

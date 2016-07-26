@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.image.AsyncImageView android:id="@id/title_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_alignParentTop="true" app:placeholderImageScaleType="fitXY" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip">
+        <com.ss.android.image.AsyncImageView android:id="@id/chat_info_avatar" android:layout_width="59.0dip" android:layout_height="59.0dip" app:placeholderImage="@color/ssxinmian2" app:placeholderImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" app:roundingBorderWidth="1.0dip" app:roundingBorderColor="#7fe8e8e8" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/chat_info_avatar">
+            <TextView android:textSize="16.0sp" android:id="@id/chat_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip">
+                <TextView android:textSize="12.0sp" android:id="@id/chat_info_notice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:singleLine="true" />
+                <TextView android:textSize="12.0sp" android:id="@id/chat_info_fans_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include layout="@layout/include_chat_title_bar" />
+    <include layout="@layout/include_chat_title_retract_star_bar" />
+</merge>

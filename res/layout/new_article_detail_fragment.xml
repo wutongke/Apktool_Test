@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_bar" android:layout_below="@id/title_bar_divider">
+        <include android:id="@id/detail_page" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/new_article_detail_page" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <ProgressBar android:id="@id/ss_htmlprogessbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:layout_below="@id/title_bar" style="?android:attr/progressBarStyleHorizontal" />
+    <RelativeLayout android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" android:layout_below="@id/title_bar">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/list_notify_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/notify_view_cancel_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/notify_view_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/notify_view_divider" />
+            <TextView android:id="@id/notify_view_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/list_notify_cancel_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.ss.android.common.ui.view.FullscreenVideoFrame android:id="@id/customview_layout" android:background="#ff000000" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/top_video_holder" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <SurfaceView android:id="@id/hack_surface_view_flicker" android:visibility="gone" android:layout_width="0.0px" android:layout_height="0.0px" />
+</RelativeLayout>

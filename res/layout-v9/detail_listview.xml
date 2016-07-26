@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.base.feature.detail.view.MyListViewV9 android:id="@id/detail_listview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/ss_comment_list"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

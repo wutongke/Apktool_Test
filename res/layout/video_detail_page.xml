@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/content_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/night_mode_overlay" style="@style/night_mode_overlay" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/bottom_listview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/bottom_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/picture_article_write_comment_layout" android:layout_below="@id/web_picture_article_comment_title_divider" layout="@layout/detail_listview" />
+        </RelativeLayout>
+    </FrameLayout>
+    <com.ss.android.article.base.feature.detail2.widget.DetailErrorView android:id="@id/detail_error_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

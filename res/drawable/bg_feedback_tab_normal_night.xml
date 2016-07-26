@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-0.5dip" android:top="-0.5dip" android:right="-0.5dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_feedback_tab_night" />
+            <stroke android:width="0.5px" android:color="@color/bg_feedback_tab_line_normal_night" />
+        </shape>
+    </item>
+</layer-list>

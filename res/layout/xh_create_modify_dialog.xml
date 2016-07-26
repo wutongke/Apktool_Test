@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ql_transparent" android:layout_width="300.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/xh_dialog_backgroud" android:paddingBottom="12.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/top_create_modify" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="20.0dip">
+            <ImageView android:id="@id/return_create_modify" android:background="@drawable/xh_ic_arrow_left" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitXY" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ql_quick_login_title" android:id="@id/user_create_modify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/xh_create_sub" android:layout_toRightOf="@id/return_create_modify" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/divide_line" android:background="@color/ql_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:scaleType="fitXY" android:layout_below="@id/top_create_modify" />
+        <RelativeLayout android:id="@id/body_create_modify" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="6.0dip" android:layout_below="@id/divide_line">
+            <ImageView android:id="@id/head_pic_create_modify" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/xh_10" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/xh_edit" android:background="@drawable/ql_textfield_default_emui_new" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/head_pic_create_modify" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:id="@id/footer_create_modify" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/body_create_modify">
+            <RelativeLayout android:id="@id/progress_create_modify_relative" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true">
+                <ImageView android:id="@id/progress_create_modify" android:background="@drawable/xh_ic_loading" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/ql_switch_footer_button" android:id="@id/xh_create_modify_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/progress_create_modify_relative" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

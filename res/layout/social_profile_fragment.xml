@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/vertical_line" android:background="@drawable/comment_vertical_line_drawer" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="fill_parent" style="@style/comment_vertical_line" />
+    <ListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" style="@style/ss_comment_list" />
+    <TextView android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_alignTop="@id/listview" style="@style/list_notify_view" />
+    <FrameLayout android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/empty_view_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/social_error_tip_no_update" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:layout_centerInParent="true" />
+</RelativeLayout>

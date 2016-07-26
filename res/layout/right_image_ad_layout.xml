@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/right_image_ad_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginRight="@dimen/feed_item_horizontal_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/right_image_ad_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_image_ad_image_layout" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="23.0dip">
+            <TextView android:ellipsize="end" android:id="@id/right_image_ad_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="@style/feed_item_title" />
+            <include android:id="@id/ad_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ad_info_layout_margin_top" layout="@layout/ad_info_layout" />
+        </LinearLayout>
+        <com.ss.android.article.base.feature.feed.activity.InfoLayout android:id="@id/right_info_layout_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/right_image_ad_image_layout" android:layout_width="@dimen/ad_image_width" android:layout_height="@dimen/ad_image_width" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/right_image_ad_image" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" fresco:placeholderImage="@drawable/simple_image_holder_listpage" fresco:actualImageScaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi7" android:gravity="center" android:id="@id/right_image_ad_image_tag_icon" android:background="@drawable/appointment_ad_textpage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

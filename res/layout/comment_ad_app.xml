@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ad_app_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/appad_layout" android:background="@drawable/bg_detail_action" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/comment_item_margin_horizon" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/comment_item_margin_horizon" android:layout_marginBottom="16.0dip">
+        <RelativeLayout android:id="@id/appicon_area" android:background="@drawable/detail_ad_banner_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.62">
+            <ImageView android:id="@id/appicon" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+            <TextView android:textSize="9.0sp" android:textColor="@color/ssxinzi8" android:id="@id/appicon_lable_info" android:background="@drawable/detail_ad_taobao_image_lable" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="@string/ad_label_info" android:layout_alignRight="@id/appicon" android:layout_alignBottom="@id/appicon" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_weight="0.38">
+            <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/appname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <RatingBar android:id="@id/star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:numStars="5" android:rating="5.0" android:stepSize="0.5" android:layout_below="@id/appname" android:layout_alignParentLeft="true" style="@style/rating_bar_style" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/appad_v18_hot_text" android:ellipsize="end" android:id="@id/hot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/appad_v18_hot" android:singleLine="true" android:drawableLeft="@drawable/hoticon_textpage_ad" android:drawablePadding="6.0dip" android:layout_below="@id/appname" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/download_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/appname">
+                <TextView android:textSize="12.0sp" android:textColor="@color/appad_v18_download_text" android:ellipsize="end" android:id="@id/download_success_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/download_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/appname">
+                <TextView android:textSize="12.0sp" android:textColor="@color/appad_v18_download_text" android:ellipsize="end" android:id="@id/download_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <ProgressBar android:id="@id/download_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:max="100" android:layout_below="@id/appname" style="@style/download_progress_bar" />
+            <include android:id="@id/ad_action_btn" android:layout_width="72.0dip" android:layout_height="32.0dip" android:layout_marginTop="34.0dip" android:layout_below="@id/appname" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/ad_action_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/appad_layout" />
+</RelativeLayout>

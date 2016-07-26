@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topic="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/video_icon" android:layout_width="@dimen/item_content_group_img_width" android:layout_height="@dimen/item_content_group_img_height" topic:placeholderImage="@drawable/urlicon_loadingpicture_dynamic" topic:placeholderImageScaleType="centerCrop" topic:actualImageScaleType="centerCrop" />
+    <ImageView android:id="@id/video_mask" android:layout_width="@dimen/item_content_group_img_width" android:layout_height="@dimen/item_content_group_img_height" android:src="@drawable/videoicon_loadingpicture_dynamic" android:scaleType="centerInside" />
+    <TextView android:id="@id/video_title" android:layout_toRightOf="@id/video_icon" android:layout_centerVertical="true" style="@style/topic_list_item_group_title" />
+</RelativeLayout>

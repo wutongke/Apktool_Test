@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/avatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/digg_list_margin" android:layout_marginTop="@dimen/digg_list_margin" android:layout_marginRight="9.0dip" android:layout_alignParentTop="true" app:placeholderImage="@drawable/big_defaulthead_head" app:placeholderImageScaleType="centerCrop" app:actualImageScaleType="centerCrop" app:roundAsCircle="true" />
+    <ImageView android:id="@id/vip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/profile_follow_vyellow" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" />
+    <RelativeLayout android:id="@id/info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="@dimen/digg_list_margin" android:layout_toRightOf="@id/avatar" android:layout_alignParentTop="true">
+        <com.ss.android.article.base.ui.PriorityLinearLayout android:id="@id/name_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/profile_friend_adapter_name" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:pll_measure_priority="0" app:pll_layout_order="0" />
+        </com.ss.android.article.base.ui.PriorityLinearLayout>
+        <TextView android:textSize="10.0sp" android:textColor="@color/profile_friend_adapter_update" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="-1.0dip" android:singleLine="true" android:layout_below="@id/name_wrapper" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/digglist_divider_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/digg_list_margin" android:layout_marginRight="@dimen/digg_list_margin" android:layout_below="@id/info_layout" android:layout_alignLeft="@id/info_layout" />
+</RelativeLayout>

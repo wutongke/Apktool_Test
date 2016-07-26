@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/my_page_header" layout="@layout/my_page_header" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tool_bar_layout" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="64.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/favorite_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0" style="@style/Clickable.OnlyRippleEffect">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi2" android:gravity="center" android:id="@id/favorite_tv" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_item_favorite" android:drawableTop="@drawable/my_page_favorite_selector" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+            <View android:id="@id/vertical_divider_one" android:background="@color/ssxinxian1" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/night_mode_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0" style="@style/Clickable.OnlyRippleEffect">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi2" android:gravity="center" android:id="@id/night_mode_tv" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_item_night_mode" android:drawableTop="@drawable/my_page_nightmode_selector" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+            <View android:id="@id/vertical_divider_two" android:background="@color/ssxinxian1" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/settings_layout" android:layout_width="0.0dip" android:layout_height="64.0dip" android:layout_weight="1.0" style="@style/Clickable.OnlyRippleEffect">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi2" android:gravity="center" android:id="@id/settings_tv" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mine_item_settings" android:drawableTop="@drawable/my_page_settings_selector" android:drawablePadding="7.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/horizontal_divider_one" android:background="@drawable/my_page_divider_bg" android:layout_width="fill_parent" android:layout_height="@dimen/my_page_item_divider_height" />
+        <RelativeLayout android:id="@id/my_friend_update_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/friend_update_tv" android:text="@string/mine_item_friend_update" style="@style/my_page_item_tv" />
+            <com.ss.android.article.base.ui.TagView android:id="@id/friend_update_tagview" android:visibility="invisible" android:layout_toRightOf="@id/friend_update_tv" style="@style/my_page_tagview" />
+            <ImageView android:id="@id/friend_update_right_arrow" style="@style/my_page_item_right_arrow" />
+            <ImageView android:id="@id/friend_update_avatar" android:visibility="invisible" android:layout_width="@dimen/my_page_lastest_user_max_avatar_size" android:layout_height="@dimen/my_page_lastest_user_max_avatar_size" android:layout_marginRight="12.0dip" android:src="@drawable/big_defaulthead_head" android:layout_toLeftOf="@id/friend_update_right_arrow" android:layout_centerVertical="true" />
+            <View android:id="@id/friend_indicator_dot" android:background="@drawable/main_tab_dot_bg" android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="-2.0dip" android:layout_marginRight="-4.0dip" android:layout_alignTop="@id/friend_update_avatar" android:layout_alignRight="@id/friend_update_avatar" />
+        </RelativeLayout>
+        <View android:id="@id/horizontal_divider_two" android:background="@drawable/my_page_divider_bg" android:layout_width="fill_parent" android:layout_height="@dimen/my_page_item_divider_height" />
+        <RelativeLayout android:id="@id/my_page_pgc_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_pgc_name_tv" android:text="雅雅的生活感悟" style="@style/my_page_item_tv" />
+            <ImageView android:id="@id/my_page_pgc_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_pgc_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_page_message_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_message_tv" android:text="@string/mine_item_notification" style="@style/my_page_item_tv" />
+            <com.ss.android.article.base.ui.TagView android:id="@id/my_page_message_tagview" android:visibility="invisible" android:layout_toRightOf="@id/my_page_message_tv" style="@style/my_page_tagview" />
+            <ImageView android:id="@id/my_page_message_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_message_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_page_offline_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_offline_tv" android:text="@string/mine_item_offline" style="@style/my_page_item_tv" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:id="@id/my_page_offline_download_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_toLeftOf="@id/my_page_offline_right_arrow" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/my_page_offline_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_offline_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_page_activity_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_activity_tv" android:text="@string/mine_item_activity" style="@style/my_page_item_tv" />
+            <com.ss.android.article.base.ui.TagView android:id="@id/my_page_activity_tagview" android:visibility="invisible" android:layout_toRightOf="@id/my_page_activity_tv" style="@style/my_page_tagview" />
+            <ImageView android:id="@id/my_page_activity_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_activity_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_page_sell_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_sell_tv" android:text="@string/mine_item_sell" style="@style/my_page_item_tv" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/my_page_sell_introduce_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mine_item_sell_introduce" android:layout_toRightOf="@id/my_page_sell_tv" android:layout_alignBottom="@id/my_page_sell_tv" />
+            <ImageView android:id="@id/my_page_sell_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_sell_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_page_appstore_layout" android:visibility="gone" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_appstore_tv" android:text="@string/mine_item_appstore" style="@style/my_page_item_tv" />
+            <ImageView android:id="@id/my_page_appstore_right_arrow" style="@style/my_page_item_right_arrow" />
+            <View android:id="@id/my_page_appstore_divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/dynamic_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/my_page_feedback_layout" style="@style/my_page_item_root">
+            <TextView android:id="@id/my_page_feedback_tv" android:text="@string/mine_item_feedback" style="@style/my_page_item_tv" />
+            <ImageView android:id="@id/my_page_feedback_right_arrow" style="@style/my_page_item_right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

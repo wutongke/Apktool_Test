@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="70.0dip" android:layout_alignParentTop="true" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="8.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/social_adapter_head" android:background="@drawable/comment_headbg_btn" android:duplicateParentState="false" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="fitXY" android:layout_alignWithParentIfMissing="true" />
+        <ImageView android:id="@id/mark_v" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/profile_follow_vyellow" android:scaleType="center" android:layout_alignRight="@id/social_adapter_head" android:layout_alignBottom="@id/social_adapter_head" />
+    </RelativeLayout>
+    <com.ss.android.common.ui.view.UnPressableRelativeLayout android:id="@id/action_layout" android:duplicateParentState="false" android:layout_width="51.0dip" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="@color/social_friend_action_text" android:gravity="center" android:id="@id/social_adapter_action" android:background="@drawable/social_friend_action_bg" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/social_adapter_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    </com.ss.android.common.ui.view.UnPressableRelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_toLeftOf="@id/action_layout" android:layout_toRightOf="@id/avatar_layout">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@id/social_adapter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="140.0dip" android:singleLine="true" style="@style/profile_friend_adapter_name" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/social_new_hint_text" android:id="@id/new_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/new_hint" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+            <ImageView android:id="@id/social_platform" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:scaleType="center" />
+            <TextView android:ellipsize="end" android:id="@id/social_adapter_last_update" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/profile_friend_adapter_update" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/content_layout" android:layout_alignParentBottom="true" />
+</RelativeLayout>

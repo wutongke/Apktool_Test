@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center_vertical" android:id="@id/event_host" style="@style/item_setting_middle">
+                    <TextView android:id="@id/host_label" android:text="@string/project_mode_event_host" style="@style/setting_item_text" />
+                    <EditText android:textSize="14.0sp" android:textColor="@color/search_text" android:textColorHint="@color/search_text_hint" android:gravity="center|left" android:id="@id/host_input" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/event_host_hint" android:singleLine="true" android:maxLength="50" android:dropDownSelector="@color/transparent" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" />
+                    <TextView android:id="@id/host_ok" android:background="@drawable/btn_action" android:layout_marginRight="10.0dip" android:minWidth="25.0dip" android:minHeight="15.0dip" android:text="@string/ok" style="@style/common_button" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/test_user_info_layout" style="@style/item_setting_middle">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="10.0dip" android:text="用户名： " />
+                    <EditText android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:textColorHint="#80222222" android:gravity="center|left" android:id="@id/test_user_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="40.0dip" android:hint="your name" android:singleLine="true" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone" />
+                    <TextView android:id="@id/test_username_ok" android:background="@drawable/btn_action" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:minWidth="25.0dip" android:minHeight="15.0dip" android:text="@string/ok" style="@style/common_button" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/test_environment_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:id="@id/test_live_chat" style="@style/item_setting_middle">
+                    <TextView android:id="@id/test_live_chat_text" android:text="@string/project_mode_live_chat" style="@style/setting_item_text" />
+                    <EditText android:id="@id/test_live_chat_live_id" android:hint="\ 6259251226370638085" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center" android:id="@id/test_live_chat_arrow" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow_right_setup" />
+                </LinearLayout>
+                <LinearLayout style="@style/item_setting_middle">
+                    <TextView android:text="火山:" style="@style/setting_item_text" />
+                    <EditText android:id="@id/test_live_huoshan_live_id" android:hint="\ 6291047261279357698" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <ImageView android:gravity="center" android:id="@id/test_live_huoshan_arrow" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/arrow_right_setup" />
+                </LinearLayout>
+                <LinearLayout style="@style/item_setting_middle">
+                    <TextView android:text="@string/setting_video_cache" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <com.ss.android.common.ui.view.SwitchButton android:id="@id/test_video_cache" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                </LinearLayout>
+                <LinearLayout style="@style/item_setting_middle">
+                    <TextView android:text="@string/setting_huoshan_sandbox" style="@style/setting_item_text" />
+                    <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                    <com.ss.android.common.ui.view.SwitchButton android:id="@id/test_huoshan_sandbox" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</RelativeLayout>

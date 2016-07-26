@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/ssxinxian2" />
+    </item>
+    <item android:left="32.0dip">
+        <color android:color="#ffdddddd" />
+    </item>
+</layer-list>

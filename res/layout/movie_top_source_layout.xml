@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_source_layout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/top_source_icon" android:layout_width="19.0dip" android:layout_height="19.0dip" android:scaleType="centerInside" app:placeholderImage="@color/ssxinmian2" app:roundAsCircle="true" />
+    <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="@color/ssxinzi7" android:gravity="center" android:id="@id/top_source_icon_tv" android:background="@drawable/circle_solid_mian7" android:visibility="gone" android:layout_width="19.0dip" android:layout_height="19.0dip" />
+    <com.ss.android.article.base.ui.PriorityLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView android:textSize="12.0sp" android:textColor="@color/zi1" android:ellipsize="end" android:id="@id/top_source_text" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:pll_measure_priority="0" app:pll_layout_order="0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/pgc_subscribe_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" app:pll_measure_priority="2" app:pll_layout_order="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/source_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:singleLine="true" android:drawableLeft="@drawable/right_arrow_icon" android:drawablePadding="7.0dip" app:pll_measure_priority="1" app:pll_layout_order="2" />
+    </com.ss.android.article.base.ui.PriorityLinearLayout>
+    <RatingBar android:id="@id/movie_star" android:visibility="gone" android:layout_width="wrap_content" android:layout_marginLeft="6.0dip" android:numStars="5" android:rating="5.0" android:stepSize="0.5" style="@style/movie_rating_bar_style" />
+    <View android:id="@id/stub" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" style="@style/ugc_action_style" />
+</LinearLayout>

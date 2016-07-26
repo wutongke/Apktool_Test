@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.feature.detail.view.DetailScrollView android:id="@id/webview_layout" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/top_webview" layout="@layout/detail_webview" />
+        <ViewStub android:id="@id/picture_detail_layout_viewstub" android:layout="@layout/picture_detail" android:inflatedId="@id/picture_detail_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar_divider" />
+        <View android:id="@id/night_mode_overlay" style="@style/night_mode_overlay" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/bottom_listview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/web_picture_article_comment_titlebar" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_alignParentTop="true" layout="@layout/picture_article_comment_titlebar_layout" />
+            <View android:id="@id/bottom_listview_layout_title_dividerline" android:background="@color/ssxinxian7" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/web_picture_article_comment_titlebar" />
+            <View android:id="@id/web_picture_article_comment_title_divider" android:background="@color/article_detail_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_below="@id/bottom_listview_layout_title_dividerline" />
+            <include android:id="@id/bottom_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/picture_article_write_comment_layout" android:layout_below="@id/web_picture_article_comment_title_divider" layout="@layout/detail_listview" />
+            <include android:id="@id/picture_article_write_comment_layout" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentBottom="true" layout="@layout/picture_article_write_comment_layout" />
+        </RelativeLayout>
+    </com.ss.android.article.base.feature.detail.view.DetailScrollView>
+    <ProgressBar android:id="@id/center_progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+    <include android:id="@id/web_picture_article_titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/picture_article_titlebar_layout" />
+    <include android:id="@id/web_picture_article_tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/picture_article_toolbar_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/alt_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.ss.android.article.base.ui.LoadingFlashView android:layout_gravity="center" android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <Button android:textSize="14.0sp" android:textColor="#ff333333" android:layout_gravity="center" android:id="@id/retry" android:background="@drawable/ss_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:minHeight="25.0dip" android:text="@string/label_retry" />
+    </LinearLayout>
+</RelativeLayout>

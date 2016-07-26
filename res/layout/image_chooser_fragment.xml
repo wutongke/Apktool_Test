@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bottom_layout" android:background="@color/dihuise1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/image_chooser_preview_btn_state" android:gravity="center_vertical" android:id="@id/preview_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:text="@string/preview" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/heise7" android:id="@id/show_select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/image_chooser_ok_btn_state" android:gravity="center_vertical" android:id="@id/ok_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <GridView android:id="@id/image_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="4" android:layout_above="@id/bottom_layout" android:layout_centerInParent="true" />
+</RelativeLayout>

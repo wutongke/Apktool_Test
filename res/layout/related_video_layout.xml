@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/related_video_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rv_image" style="@style/related_video_image_style" />
+    <TextView android:gravity="bottom" android:id="@id/rv_text" style="@style/related_video_text_style" />
+</FrameLayout>

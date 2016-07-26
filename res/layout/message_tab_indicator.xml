@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/message_tab_text_color" android:id="@id/indicator_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.ss.android.article.base.ui.TagView android:id="@id/indicator_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="-7.0dip" android:layout_toRightOf="@id/indicator_title" android:layout_alignTop="@id/indicator_title" />
+</merge>

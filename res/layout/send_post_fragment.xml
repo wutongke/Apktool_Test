@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/root_view" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/movie_score_stub" android:layout="@layout/movie_score_layout" android:inflatedId="@id/movie_score_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="vertical" android:id="@id/edit_wrapper" android:background="@color/ssxinmian4" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="17.0sp" android:textColor="@color/ssxinzi1" android:textColorHint="@color/ssxinzi3" android:gravity="center_vertical" android:id="@id/title_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="44.0dip" android:hint="@string/send_post_input_title_hint" android:singleLine="true" android:maxLength="20" />
+            <View android:id="@id/input_separate_line" android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_et" />
+            <EditText android:textSize="17.0sp" android:textColor="@color/ssxinzi1" android:textColorHint="@color/ssxinzi3" android:gravity="center|left|top" android:id="@id/content_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:minHeight="85.0dip" android:hint="@string/say_something" android:layout_below="@id/input_separate_line" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/comment_dlg_bottom_hint" android:id="@id/length_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_below="@id/content_et" android:layout_alignParentRight="true" />
+            <com.ss.android.article.base.ui.StickyGridView android:id="@id/image_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" android:layout_below="@id/length_hint" />
+        </RelativeLayout>
+        <View android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="10.0dip" />
+        <View android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/phone_input_layout" android:background="@drawable/ssxinmian4_selector" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <ImageView android:id="@id/clear_phone" android:padding="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:src="@drawable/close_discover_btn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <EditText android:textColorHint="@color/ssxinzi3" android:id="@id/phone_et" android:background="@null" android:hint="@string/send_post_input_phone_hint" android:drawableLeft="@drawable/phone_repost" android:layout_toLeftOf="@id/clear_phone" android:inputType="phone" style="@style/send_post_item_text" />
+            <View android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/geo_loc_choose" android:background="@drawable/ssxinmian4_selector" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <ImageView android:id="@id/location_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.5dip" android:layout_marginRight="6.0dip" android:src="@drawable/locationicon_repost" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/arrow_right_setup" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:id="@id/geo_loc_desc" android:text="@string/location_title" android:drawableLeft="@drawable/locationicon_repost" android:layout_toLeftOf="@id/right_arrow" style="@style/send_post_item_text" />
+        </RelativeLayout>
+        <View android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</ScrollView>

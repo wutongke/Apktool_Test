@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/search_input_layout" layout="@layout/base_search_fragment" />
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_input_layout" style="@style/article_list_style" />
+    <FrameLayout android:id="@id/searchWebView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_input_layout" />
+    <com.ss.android.common.ui.view.WrapLineFlowLayout android:id="@id/hotword_layout" android:paddingLeft="4.0dip" android:paddingTop="8.0dip" android:paddingRight="4.0dip" android:paddingBottom="8.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/search_input_layout" app:hSpacing="4.0dip" app:vSpacing="8.0dip" app:alignCenter="true" />
+    <include android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" layout="@layout/notify_view_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/loading_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/page_progressbar" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/no_result_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_no_result" />
+        <TextView android:textSize="@dimen/no_result_textsize" android:textColor="@color/no_result_text" android:gravity="center" android:id="@id/no_result_first_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/no_result_first_line" />
+        <TextView android:textSize="@dimen/no_result_textsize" android:textColor="@color/no_result_text" android:gravity="center" android:id="@id/no_result_second_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_result_second_line" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/search_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_below="@id/search_input_layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20.0sp" android:textColor="@color/ssxinzi2" android:id="@id/search_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_tip" />
+        <ImageView android:id="@id/search_tip_divider" android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_tip_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip">
+            <TextView android:id="@id/search_tip_article" android:text="@string/search_tip_article" android:drawableTop="@drawable/essay_discover" style="@style/search_tip_icon" />
+            <TextView android:id="@id/search_tip_channel" android:layout_marginLeft="28.0dip" android:text="@string/search_tip_channel" android:drawableTop="@drawable/channel_discover" style="@style/search_tip_icon" />
+            <TextView android:id="@id/search_tip_pgc" android:layout_marginLeft="28.0dip" android:text="@string/search_tip_pgc" android:drawableTop="@drawable/pgc_discover" style="@style/search_tip_icon" />
+            <TextView android:id="@id/search_tip_video" android:layout_marginLeft="28.0dip" android:text="@string/search_tip_video" android:drawableTop="@drawable/video_discover" style="@style/search_tip_icon" />
+            <TextView android:id="@id/search_tip_topic" android:layout_marginLeft="28.0dip" android:text="@string/search_tip_topic" android:drawableTop="@drawable/topic_discover" style="@style/search_tip_icon" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

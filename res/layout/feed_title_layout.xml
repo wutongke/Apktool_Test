@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/right_contents_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_pic_wrapper" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:ellipsize="end" android:id="@id/right_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:maxLines="3" style="@style/feed_item_title" />
+        <com.ss.android.article.base.feature.feed.activity.InfoLayout android:id="@id/right_info_layout_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/right_pic_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/right_pic" android:layout_width="@dimen/item_image_width" android:layout_height="@dimen/item_image_height" fresco:placeholderImage="@drawable/simple_image_holder_listpage" fresco:actualImageScaleType="centerCrop" />
+        <com.ss.android.article.base.ui.DrawableButton android:layout_gravity="bottom|center|right" android:id="@id/right_video_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" style="@style/video_duration_icon_style" xmlns:ss="http://schemas.android.com/apk/res-auto" />
+    </FrameLayout>
+</RelativeLayout>

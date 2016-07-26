@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gallery_detail_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.ui.ZoomImageView android:id="@id/zoomimageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ProgressBar android:id="@id/picture_item_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/ss_progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    <include android:id="@id/picture_item_retry_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/picture_detail_retry_layout" />
+</RelativeLayout>

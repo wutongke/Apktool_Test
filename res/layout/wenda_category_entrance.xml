@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mian3" android:layout_width="fill_parent" android:layout_height="75.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wenda_logo" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="@dimen/feed_margin" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/ask_card_logo_wap" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/wenda_category_enter_text_color" android:gravity="center" android:id="@id/wenda_category_enter_btn" android:background="@drawable/wenda_category_enter_btn_bg" android:layout_width="53.0dip" android:layout_height="28.0dip" android:layout_marginRight="@dimen/feed_margin" android:text="@string/wenda_category_enter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/wenda_category_introduce_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:text="关注问答频道，聊天更有谈资" android:maxLines="2" android:layout_toLeftOf="@id/wenda_category_enter_btn" android:layout_toRightOf="@id/wenda_logo" android:layout_centerVertical="true" android:lineSpacingExtra="3.0dip" />
+</RelativeLayout>

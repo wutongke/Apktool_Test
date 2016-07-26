@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/list_item_horizontal_outside_padding" android:paddingRight="@dimen/list_item_horizontal_outside_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/feed_card_505_header_title_size" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:gravity="center" android:id="@id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/feed_card_505_header_sub_padding" android:layout_weight="1.0">
+        <RatingBar android:id="@id/header_rating" android:layout_width="wrap_content" android:max="10" android:numStars="5" android:stepSize="0.5" android:isIndicator="true" style="@style/movie_rating_bar_style" />
+        <TextView android:textSize="@dimen/feed_card_505_header_rating_size" android:textColor="@color/ssxinzi4" android:id="@id/header_rating_number" android:paddingLeft="@dimen/feed_card_505_header_sub_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/feed_card_pop_icon" android:paddingLeft="@dimen/list_item_horizontal_inside_padding" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/feed_card_header_hight" android:src="@drawable/popicon_listpage" android:scaleType="centerInside" />
+    <ImageView android:id="@id/action" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/feed_card_header_hight" android:scaleType="centerInside" style="@style/ugc_action_style" />
+</LinearLayout>

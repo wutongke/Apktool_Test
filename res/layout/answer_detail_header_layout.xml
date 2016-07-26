@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/answer_detail_question_title_size" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:id="@id/question_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" android:maxLines="2" android:layout_toLeftOf="@id/question_answer_count" android:layout_centerVertical="true" android:lineSpacingMultiplier="1.1" />
+    <com.bytedance.article.common.utility.view.DrawableCenterTextView android:textSize="@dimen/answer_detail_question_answer_count_size" android:textColor="@color/ssxinzi3" android:id="@id/question_answer_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="70.0dip" android:text="@string/wenda_answer_count_hint" android:singleLine="true" android:drawableRight="@drawable/comment_arrow_icon1" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/question_header_divide" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/question_title" />
+</RelativeLayout>

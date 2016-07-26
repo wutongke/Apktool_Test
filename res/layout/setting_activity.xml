@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/line1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:id="@id/setting_list_mode" style="@style/item_setting_middle">
+                        <TextView android:id="@id/list_mode_text" android:text="@string/setting_list_mode" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/list_mode_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/refresh_button_switch" style="@style/item_setting_middle">
+                        <TextView android:id="@id/refresh_button_text" android:text="@string/setting_refresh_button_show" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/refresh_button_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/night_mode" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/night_mode_text" android:text="@string/setting_night_mode" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/night_mode_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/setting_font_size" style="@style/item_setting_bottom">
+                        <TextView android:id="@id/font_size_text" android:text="@string/setting_font_size" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/font_size" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/setting_refresh_list" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/refresh_list_text" android:text="@string/setting_refresh_list" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/refresh_list_mode" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/setting_list_comment" android:visibility="gone" style="@style/item_setting_bottom">
+                        <TextView android:id="@id/list_comment_text" android:text="@string/setting_list_comment" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/list_comment_mode" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <View android:id="@id/line_bottom1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <View android:id="@id/line2" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+                    <LinearLayout android:id="@id/setting_load_image" style="@style/item_setting_middle">
+                        <TextView android:id="@id/load_image_text" android:text="@string/setting_load_image" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/load_image_mode" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/clear" style="@style/item_setting_bottom">
+                        <TextView android:id="@id/clear_text" android:text="@string/setting_clear" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/cache_size" android:singleLine="true" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <View android:id="@id/line_bottom2" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <View android:id="@id/line3" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+                    <LinearLayout android:id="@id/notify" style="@style/item_setting_middle">
+                        <TextView android:id="@id/notify_text" android:text="@string/setting_notify" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/notify_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/use_info_structure" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/use_info_structure_text" android:text="@string/setting_use_info_structure" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/use_info_structure_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/use_ugc_style" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/use_ugc_style_text" android:text="@string/setting_use_ugc_style" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/use_ugc_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/permanent_notify" style="@style/item_setting_middle">
+                        <TextView android:id="@id/permanent_notify_text" android:text="@string/setting_permanent_notify" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/permanent_notify_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/share_when_favor" style="@style/item_setting_middle">
+                        <TextView android:id="@id/share_when_favor_text" android:text="@string/setting_share_when_favor" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/share_when_favor_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/setting_video_auto_play_mode" style="@style/item_setting_middle">
+                        <TextView android:id="@id/video_auto_play_mode_text" android:text="@string/setting_video_auto_play_mode" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/video_auto_play_mode" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <View android:id="@id/line_bottom3" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <View android:id="@id/line4" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="15.0dip" />
+                    <LinearLayout android:id="@id/update" style="@style/item_setting_middle">
+                        <TextView android:id="@id/update_text" android:text="@string/setting_update" style="@style/setting_item_text" />
+                        <ImageView android:id="@id/version_new" android:visibility="gone" style="@style/setting_hint_new" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <TextView android:id="@id/current_version" style="@style/setting_alt_text" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/recommendation" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/recommendation_text" android:text="@string/setting_recommend" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/recommendation_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/splash_ad" style="@style/item_setting_middle">
+                        <TextView android:id="@id/splash_ad_text" android:text="@string/setting_splash_ad" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/splash_ad_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/switch_domain" android:visibility="gone" style="@style/item_setting_middle">
+                        <TextView android:id="@id/switch_domain_text" android:text="@string/setting_switch_domain" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <com.ss.android.common.ui.view.SwitchButton android:id="@id/switch_domain_switcher" myapp:ms_thumb="@drawable/button_switch_all" myapp:ms_track="@drawable/mine_preference_switch_track" style="@style/setting_switcher" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/use_help" style="@style/item_setting_bottom">
+                        <TextView android:id="@id/use_help_text" android:text="@string/setting_use_help" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:id="@id/use_help_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+                    </LinearLayout>
+                    <View android:id="@id/line_bottom4" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <LinearLayout android:id="@id/project_mode" android:visibility="gone" android:layout_marginTop="15.0dip" style="@style/item_setting_middle">
+                        <TextView android:text="@string/setting_project_mode" style="@style/setting_item_text" />
+                        <View android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="12.0sp" android:textColor="@color/link_protocol_text" android:layout_gravity="center_horizontal" android:id="@id/user_agreement_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/user_agreement" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/copyright" android:padding="10.0dip" android:layout_marginTop="30.0dip" style="@style/setting_copyright" />
+                <TextView android:id="@id/release_info" style="@style/setting_release_info" />
+            </LinearLayout>
+        </ScrollView>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <bitmap android:gravity="center|right|top" android:src="@drawable/ss_comment_digg_highlight" android:tileMode="disabled" />
+    </item>
+    <item>
+        <bitmap android:gravity="center|right|top" android:src="@drawable/ss_comment_digg_normal" android:tileMode="disabled" />
+    </item>
+</selector>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/comment_dlg_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/ss_comment_dlg_title" />
+    <com.ss.android.common.ui.view.MaxSizeLinearLayout android:orientation="vertical" android:id="@id/top_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" app:maxHeight="172.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/input_layout" android:background="@drawable/ss_textfield_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="8.0dip" android:layout_weight="1.0">
+            <EditText android:textSize="15.0sp" android:textColor="@color/comment_dlg_text" android:textColorHint="@color/comment_dlg_text_hint" android:gravity="center|left|top" android:id="@id/ss_share_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:lineSpacingExtra="8.0dip" android:inputType="textMultiLine" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+                <TextView android:textSize="12.0sp" android:textColor="@color/comment_dlg_bottom_hint" android:id="@id/comment_bottom_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_bottom_hint" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/comment_dlg_bottom_hint" android:layout_gravity="right" android:id="@id/ss_limit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <TextView android:textColor="@color/comment_dlg_repost_label" android:layout_gravity="center_vertical" android:id="@id/repost_label" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_repost_label" />
+            <TableLayout android:id="@id/platform_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" />
+        </LinearLayout>
+    </com.ss.android.common.ui.view.MaxSizeLinearLayout>
+    <FrameLayout android:id="@id/ss_header_cover" android:paddingTop="@dimen/title_bar_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignBottom="@id/top_layout" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" />
+    </FrameLayout>
+    <View android:id="@id/night_mode_overlay" style="@style/night_mode_overlay" />
+</RelativeLayout>

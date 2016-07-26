@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/chat_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ss.android.article.base.ui.LoadingFlashView android:layout_gravity="center" android:id="@id/empty_load_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/stub_title_star" android:visibility="invisible" android:layout="@layout/viewstub_title_star" android:inflatedId="@id/title_star" android:layout_width="fill_parent" android:layout_height="121.0dip" />
+            <ViewStub android:id="@id/stub_title_match" android:visibility="invisible" android:layout="@layout/viewstub_title_match" android:inflatedId="@id/title_match" android:layout_width="fill_parent" android:layout_height="160.0dip" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/chat_panel" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:id="@id/reply_tip" android:paddingLeft="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="23.0dip">
+                <TextView android:textSize="12.0sp" android:id="@id/reply_tip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/reply_tip_close" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="center" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <com.ss.android.livechat.chat.widget.MediaChatBar android:id="@id/tv_media_chat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ss.android.livechat.chat.widget.TextChatBar android:id="@id/tv_text_chat" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.ss.android.livechat.chat.widget.ChatPanel android:id="@id/panel_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.ss.android.common.view.ScrollDownLayout android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/chat_panel">
+            <RelativeLayout android:id="@id/body" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+                <LinearLayout android:orientation="vertical" android:id="@id/chat_tab_title_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                    <com.ss.android.livechat.chat.widget.ChatTabBar android:id="@id/chat_tab_title" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+                    <View android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <com.ss.android.common.ui.view.SSViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/chat_tab_title_ll" android:overScrollMode="never" />
+            </RelativeLayout>
+        </com.ss.android.common.view.ScrollDownLayout>
+    </RelativeLayout>
+</com.ss.android.common.ui.view.SwipeOverlayFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/social_friend_list_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/social_list_normal" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/social_list_list" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/social_friend_listview" />
+        <ProgressBar android:id="@id/social_list_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <include android:id="@id/social_list_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/social_error_page" />
+</RelativeLayout>

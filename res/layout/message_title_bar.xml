@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/back" style="@style/back_view" />
+    <com.ss.android.article.base.feature.message.MessageTabIndicator android:id="@id/digg_tab" android:layout_width="80.0dip" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.ss.android.article.base.feature.message.MessageTabIndicator android:id="@id/reply_tab" android:layout_width="80.0dip" android:layout_height="44.0dip" android:layout_toLeftOf="@id/digg_tab" android:layout_alignParentTop="true" />
+    <com.ss.android.article.base.feature.message.MessageTabIndicator android:id="@id/notification_tab" android:layout_width="80.0dip" android:layout_height="44.0dip" android:layout_toRightOf="@id/digg_tab" android:layout_alignParentTop="true" />
+    <com.ss.android.article.base.ui.MessageTabLineView android:id="@id/tab_line" android:layout_width="240.0dip" android:layout_height="2.0dip" android:layout_below="@id/digg_tab" android:layout_centerHorizontal="true" app:tabCount="3" app:lineColor="@color/ssxinmian7" app:backgroungColor="@color/transparent" app:lineWidth="67.0dip" />
+    <View android:id="@id/divide_line" android:background="@color/ssxinxian7" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tab_line" />
+</RelativeLayout>

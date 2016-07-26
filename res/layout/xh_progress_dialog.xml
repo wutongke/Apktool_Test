@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/xh_dialog_backgroud" android:layout_width="wrap_content" android:layout_height="79.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/progress" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="14.0dip" android:src="@drawable/xh_circle_medium" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toLeftOf="@id/button_layout" android:layout_toRightOf="@id/progress" android:layout_centerVertical="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/ql_progress_text" android:gravity="center_vertical" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/button_layout" android:layout_width="70.0dip" android:layout_height="38.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textColor="@color/ql_quick_login_foot_button" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/button" android:background="@drawable/xh_switch_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/xh_switch" />
+    </RelativeLayout>
+</RelativeLayout>

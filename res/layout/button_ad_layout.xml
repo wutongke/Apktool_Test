@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/btn_ad_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignLeft="@id/btn_ad_tv" android:layout_alignTop="@id/btn_ad_tv" android:layout_alignRight="@id/btn_ad_tv" android:layout_alignBottom="@id/btn_ad_tv" style="@style/button_ad_progress_bar" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi8" android:gravity="center" android:id="@id/btn_ad_tv" android:background="@drawable/video_ad_button_bg" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="44.0dip" android:minHeight="20.0dip" android:text="@string/download_now" />
+</RelativeLayout>

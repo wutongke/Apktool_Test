@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/account_setting_root" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/account_content_layout" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <View android:id="@id/area_divider_line1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_user_head" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:gravity="center_vertical" android:id="@id/account_head_prompt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/account_item_head" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/account_head_image" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" style="@style/comment_avatar" />
+                    <ProgressBar android:id="@id/account_head_progress" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/ss_progressbar" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+                </RelativeLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+            </LinearLayout>
+            <TextView android:id="@id/item_line1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_user_name" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/account_name_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/nickname" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/account_name_text" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <ProgressBar android:id="@id/account_name_progress" android:visibility="invisible" android:layout_width="12.0dip" android:layout_height="12.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/ss_progressbar" style="?android:attr/progressBarStyleSmall" />
+                </RelativeLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_user_gender" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="0.0dip" style="@style/setting_item_sole">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="@string/account_item_gender" style="@style/account_item_name" />
+                <RadioGroup android:id="@id/gender_group" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RadioButton android:id="@id/gender_male_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <RadioButton android:id="@id/gender_famale_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+            <TextView android:id="@id/item_line2" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_user_desc" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/account_desc_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/account_item_desc" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/account_desc_text" android:paddingLeft="75.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                    <ProgressBar android:id="@id/account_desc_progress" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginTop="3.0dip" android:indeterminate="true" android:indeterminateDrawable="@drawable/ss_progressbar" android:layout_alignTop="@id/account_desc_text" android:layout_alignRight="@id/account_desc_text" style="?android:attr/progressBarStyleSmall" />
+                </RelativeLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+            </LinearLayout>
+            <TextView android:id="@id/item_line3" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_mobile_num" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/account_mobile_num_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/ss_pname_mobile" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/account_mobile_num_text" android:paddingLeft="75.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+            </LinearLayout>
+            <TextView android:id="@id/line_above_pwd_change" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/account_pwd_change" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/account_pwd_change_prompt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/change_password" android:layout_weight="1.0" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/arrow_right_setup" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/area_divider_line2" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:id="@id/account_third_desc" android:background="@color/ssxinmian3" android:paddingLeft="15.0dip" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/account_account_bind" />
+        <View android:id="@id/area_divider_line3" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ss_accounts_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/area_divider_line4" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/logout_layout" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:id="@id/btn_line1" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="35.0dip" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/ssxinzi4" android:gravity="center" android:id="@id/logout" android:background="@drawable/account_item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/account_account_logout" />
+            <View android:id="@id/btn_line2" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginBottom="40.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

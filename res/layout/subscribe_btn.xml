@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.base.feature.subscribe.activity.SubscribeButton android:id="@id/action_layout" android:layout_width="44.0dip" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/subscribe_btn_text" android:gravity="center" android:id="@id/subscribe" android:background="@drawable/subscribe_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/pgc_subscribe" />
+    <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+</com.ss.android.article.base.feature.subscribe.activity.SubscribeButton>

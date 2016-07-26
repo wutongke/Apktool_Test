@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/edit_wrapper" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textColor="@color/heise8" android:textColorHint="@color/heise3" android:gravity="center|left|top" android:id="@id/input_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/say_something" android:height="90.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/comment_dlg_bottom_hint" android:id="@id/length_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_below="@id/input_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <com.ss.android.article.base.feature.update.activity.SSCheckBox android:textColor="@color/heise3" android:gravity="center_vertical" android:id="@id/forward_dynamic_cb" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/hookicon_repost" android:text="@string/forward_to_dongtai" />
+    <com.ss.android.article.base.ui.StickyGridView android:id="@id/image_gridview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="4" />
+</LinearLayout>

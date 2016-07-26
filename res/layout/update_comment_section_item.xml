@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/update_user_list_item_bg_color" android:paddingLeft="@dimen/dongtai_right_margin" android:paddingTop="15.0dip" android:paddingRight="@dimen/dongtai_right_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi1" android:layout_gravity="center_vertical" android:id="@id/update_section_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <View android:layout_gravity="center_vertical" android:id="@id/update_section_line" android:background="@color/fengexian5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="8.0dip" />
+</LinearLayout>

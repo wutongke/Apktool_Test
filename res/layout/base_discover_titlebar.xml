@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/discover_titlebar_old_bg" android:layout_width="fill_parent" android:layout_height="@dimen/discover_titlebar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/back_btn" android:paddingLeft="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/input" android:background="@drawable/base_discover_old_input" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="15.0dip" android:layout_toRightOf="@id/back_btn" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:id="@id/base_discover_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/discover_input_hint" android:layout_alignLeft="@id/input" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/discover_find_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/search_discover_normal" android:layout_alignRight="@id/input" android:layout_centerVertical="true" />
+    <View android:id="@id/titlebar_divider" android:background="@color/discover_titlebar_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

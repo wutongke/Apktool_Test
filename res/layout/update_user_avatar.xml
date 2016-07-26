@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/update_avatar_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/avatar" android:layout_width="@dimen/update_avatar_size_detail" android:layout_height="@dimen/update_avatar_size_detail" android:layout_centerInParent="true" app:placeholderImage="@drawable/user_dynamic" app:actualImageScaleType="centerInside" app:roundAsCircle="true" app:roundingBorderWidth="@dimen/update_avatar_border" app:roundingBorderColor="@color/update_user_list_item_bg_color" app:roundingBorderPadding="0.5dip" />
+    <ImageView android:id="@id/mark_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/profile_follow_vyellow" android:scaleType="center" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/ss_icon" android:padding="3.0dip" android:layout_width="45.0dip" android:layout_height="45.0dip" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/ss_indicator" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ss_check" android:scaleType="fitXY" android:layout_alignRight="@id/ss_icon" android:layout_alignBottom="@id/ss_icon" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ss_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

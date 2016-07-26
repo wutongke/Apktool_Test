@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay_activity" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_bar" android:layout_below="@id/title_bar">
+        <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ss.android.article.base.feature.detail2.widget.DetailErrorView android:id="@id/detail_error_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ss.android.article.base.feature.detail2.widget.DeleteView android:id="@id/delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <com.ss.android.article.base.feature.detail2.widget.DetailToolBar android:id="@id/tool_bar" android:layout_width="fill_parent" android:layout_height="@dimen/tool_bar_height" android:layout_alignParentBottom="true" />
+    <com.ss.android.article.base.feature.detail2.widget.DetailTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentTop="true" />
+</RelativeLayout>

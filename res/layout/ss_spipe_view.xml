@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ss_embedded_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ss_spipe_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/ss_top_divider" style="@style/ss_spipe_view_top_divider" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ss_alt_view" android:paddingLeft="4.0dip" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ss_action_layout">
+        <TextView android:id="@id/ss_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="@string/ss_error_sdk_failed" style="@style/ss_alt_view_text" />
+        <ProgressBar android:id="@id/ss_progress" android:layout_width="12.0dip" android:layout_height="12.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ss_progressbar" />
+        <Button android:id="@id/ss_retry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:minWidth="50.0dip" android:minHeight="25.0dip" android:text="@string/ss_retry" style="@style/ss_alt_view_retry" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/ss_summary" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ss_action_layout">
+        <TextView android:gravity="center" android:id="@id/ss_digg" android:background="@drawable/ss_btn" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ss_digg" android:drawablePadding="2.0dip" android:layout_alignParentLeft="true" style="@style/ss_action_text" />
+        <TextView android:gravity="center" android:id="@id/ss_bury" android:background="@drawable/ss_btn" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:drawableLeft="@drawable/ss_bury" android:drawablePadding="2.0dip" android:layout_toRightOf="@id/ss_digg" style="@style/ss_action_text" />
+        <TextView android:gravity="center_vertical" android:id="@id/ss_comment_count" android:background="@drawable/ss_sdk_btn" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/ss_sdk_icon" android:drawablePadding="4.0dip" android:layout_alignParentRight="true" style="@style/ss_action_text" />
+    </RelativeLayout>
+    <View android:id="@id/ss_top_divider2" style="@style/ss_spipe_view_top_divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ss_comment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ss_comment_container" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ss_more_view" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ss_more_view">
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ss_load_more" style="@style/ss_more_view_text" />
+        <View android:background="@drawable/ss_embedded_list_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    </LinearLayout>
+</LinearLayout>

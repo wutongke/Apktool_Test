@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="6.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="6.0dip" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_text" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/chat_text_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" />
+            <com.ss.android.livechat.chat.widget.ChatEditView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/et_message" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip" android:singleLine="false" android:includeFontPadding="false" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+            <ImageView android:id="@id/button_barrage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/button_send" android:layout_width="56.0dip" android:layout_height="27.0dip" android:text="@string/chat_send" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

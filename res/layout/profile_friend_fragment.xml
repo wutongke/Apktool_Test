@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/profile_friend_layout" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/profile_friend_btn_subscribe" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/profile_drawer_btn_base">
+            <TextView android:gravity="center" android:id="@id/profile_drawer_subscribe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_no_friends" style="@style/profile_friend_tab_number_text" />
+            <TextView android:id="@id/profile_drawer_subscribe_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_drawer_btn_subscribe" style="@style/profile_friend_tab_friend_text" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/subscribe_follow_divider" android:background="@color/divider" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/profile_friend_btn_follow" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/profile_drawer_btn_base">
+            <TextView android:id="@id/profile_drawer_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_no_friends" style="@style/profile_friend_tab_number_text" />
+            <TextView android:id="@id/profile_drawer_follow_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_drawer_btn_follow" style="@style/profile_friend_tab_friend_text" />
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@id/follow_fan_divider" android:background="@color/divider" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <LinearLayout android:id="@id/profile_friend_btn_fan" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/profile_drawer_btn_base">
+            <TextView android:id="@id/profile_drawer_fan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_no_friends" style="@style/profile_friend_tab_number_text" />
+            <TextView android:id="@id/profile_drawer_fan_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_drawer_btn_fan" style="@style/profile_friend_tab_friend_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/tab_layout_divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/profile_friend_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tab_layout_divider">
+        <FrameLayout android:id="@id/friend_fragment_subscribe" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/friend_fragment_follow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/friend_fragment_fan" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

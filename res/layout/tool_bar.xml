@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tool_bar" android:background="@drawable/detail_tool_bar_bg" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/detail_action_write_comment_text" android:gravity="center|left" android:layout_gravity="center" android:id="@id/write_comment_layout" android:background="@drawable/bg_detail_comment_btn" android:paddingLeft="12.0dip" android:layout_height="32.0dip" android:layout_marginRight="20.0dip" android:text="@string/detail_write_comment" android:drawablePadding="6.0dip" android:layout_weight="5.0" style="@style/toolbar_action" />
+    <FrameLayout android:id="@id/view_comment_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ImageView android:id="@id/action_view_comment" android:layout_marginRight="@dimen/detail_tool_bar_comment_margin" android:src="@drawable/ic_action_comment" style="@style/toolbar_action" />
+        <TextView android:id="@id/action_comment_count" android:layout_marginTop="8.5dip" style="@style/toolbar_action_comment" />
+    </FrameLayout>
+    <com.ss.android.article.base.ui.AnimationImageView android:layout_gravity="center" android:id="@id/action_favor" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="center" android:layout_weight="2.0" />
+    <ImageView android:id="@id/action_repost" android:paddingLeft="5.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_repost" android:layout_weight="2.0" style="@style/toolbar_action" />
+</LinearLayout>

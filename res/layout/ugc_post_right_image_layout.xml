@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/right_contents_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_toLeftOf="@id/right_pic_wrapper" android:layout_alignParentLeft="true">
+        <ViewStub android:id="@id/right_top_source_layout_stub" android:layout="@layout/ugc_post_top_source_layout" android:inflatedId="@id/right_top_source_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ugc_feed_source_to_recomment_margin" />
+        <TextView android:ellipsize="end" android:id="@id/right_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="@dimen/ugc_text_line_spacing" style="@style/ugc_feed_item_title" />
+        <com.ss.android.article.base.ui.EllipsisAppendSuffixTextView android:textSize="16.0sp" android:textColor="@color/item_text" android:id="@id/right_abstract_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/ugc_text_line_spacing" style="@style/ugc_item_abstract" />
+        <com.ss.android.article.base.ui.RootAutoPressedTextView android:textSize="12.0sp" android:textColor="@color/ssxinzi2" android:ellipsize="end" android:id="@id/right_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ugc_feed_title_content_gap" android:maxLines="2" android:lineSpacingExtra="@dimen/ugc_text_line_spacing" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" layout="@layout/right_ugc_info_layout" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/right_pic_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/right_pic" android:layout_width="@dimen/item_image_width" android:layout_height="@dimen/item_image_height" fresco:placeholderImage="@drawable/simple_image_holder_listpage" fresco:actualImageScaleType="centerCrop" />
+        <com.ss.android.article.base.ui.DrawableButton android:layout_gravity="bottom|center|right" android:id="@id/right_video_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" style="@style/video_duration_icon_style" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_narrow" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/heise1" android:gravity="center_horizontal" android:id="@id/content_title" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_marginBottom="12.0dip" android:text="@string/location_server_change_dlg_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/heise1" android:gravity="center_horizontal" android:id="@id/content_text" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:paddingBottom="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/content_title" />
+</RelativeLayout>

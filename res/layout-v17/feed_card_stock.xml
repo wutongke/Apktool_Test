@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/list_item_horizontal_outside_padding" android:paddingRight="@dimen/list_item_horizontal_outside_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/cell_505_stock_height">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/cell_505_stock_name_size" android:textColor="@color/ssxinzi1" android:id="@id/stock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/cell_505_stock_id_size" android:textColor="@color/ssxinzi1" android:id="@id/stock_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cell_505_stock_left_name_padding" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/divider_left" android:layout_width="@dimen/cell_505_stock_divider_width" android:layout_height="@dimen/cell_505_stock_divider_height" android:layout_marginStart="@dimen/cell_505_stock_padding_internal" style="@style/divider_line" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/stock_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleX="0.7" android:scaleY="0.7" />
+            <TextView android:textSize="@dimen/cell_505_stock_price_size_big" android:textStyle="bold" android:id="@id/stock_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cell_505_stock_middle_padding_scale" />
+            <TextView android:textSize="@dimen/cell_505_stock_price_size_small" android:id="@id/stock_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+            <TextView android:textSize="@dimen/cell_505_stock_price_size_small" android:id="@id/stock_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/cell_505_stock_middle_padding_amount" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/divider_right" android:layout_width="@dimen/cell_505_stock_divider_width" android:layout_height="@dimen/cell_505_stock_divider_height" android:layout_marginEnd="@dimen/cell_505_stock_padding_internal" style="@style/divider_line" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/cell_505_stock_status_size" android:textColor="@color/ssxinzi1" android:id="@id/trading_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/cell_505_stock_time_size" android:textColor="@color/ssxinzi1" android:id="@id/last_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cell_505_stock_right_status_padding" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

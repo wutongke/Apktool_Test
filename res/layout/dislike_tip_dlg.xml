@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/dump" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="right" android:id="@id/handle_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hand_dislike_introduce" />
+    <ImageView android:layout_gravity="right" android:id="@id/type_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:src="@drawable/type_dislike_introduce" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+
+* {
+    outline: 0px solid transparent;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+
+html {
+    padding:0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html, body {
+    margin:0;
+    font-family:helvetica;
+    font-size:1em;
+}
+
+body {
+    overflow-y: auto;
+    min-height: 100vh;
+    word-wrap: break-word;
+}
+
+p {
+    margin:24px 0;
+}
+p:first-child{
+    margin-top:0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    color: #E9EFF3;
+    background-color: #e8e8e8;
+    width: 100%;
+}
+
+img {
+    height: auto;
+    margin: 12px 0;
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 100%;
+    width:100%;
+    opacity:1;
+    vertical-align:middle;
+}
+
+.android img{
+    width:auto;
+}
+
+a {
+    color: #3c6598;
+    text-decoration: none;
+}
+
+blockquote {
+    background: #e8f0f5;
+    padding: 10px 10px 10px 20px;
+    margin: 10px 0 10px 0;
+    border-radius: 2px;
+}
+
+.field:empty:before {
+    content: attr(placeholderText);
+    color:#cacaca;
+    opacity:0.6;
+    transition: 0.2s ease opacity;
+}
+
+#zss_field_content {
+    font-size: 17px;
+    line-height: 24px;
+    color:#222222;
+    margin:15px;
+    padding-bottom:15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* 夜间模式 */
+.night{
+    background:#252525;
+}
+.night #zss_field_content{
+    color:#707070;
+}
+.night .field:empty:before{
+    color:#707070;
+}
+.night img{
+    opacity:.5;
+}
+.night a{
+    color:#67778b;
+}
+.night hr{
+    background:#464646;
+}

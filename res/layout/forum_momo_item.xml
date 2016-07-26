@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/momo_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi6" android:gravity="center" android:id="@id/popularize_mark" android:background="@drawable/popularize_mark_bg" android:paddingLeft="3.0dip" android:paddingTop="1.0dip" android:paddingRight="3.0dip" android:paddingBottom="1.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.5dip" android:layout_marginTop="6.0dip" android:text="@string/ad_label_info" />
+    <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/momo_avatar" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginLeft="49.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_alignParentLeft="true" />
+    <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="14.0dip" android:layout_toRightOf="@id/momo_avatar">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/forum_momo_name" android:gravity="left" android:id="@id/momo_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/forum_momo_name" android:gravity="left" android:id="@id/momo_location" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/forum_momo_name" android:id="@id/momo_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/forum_momo_description" android:ellipsize="end" android:gravity="left" android:id="@id/momo_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/item_divider" android:background="@drawable/update_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

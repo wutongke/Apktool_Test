@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/ssxinmian3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.topic.view.ContentPullToToRefreshListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_bar" style="@style/list_style" />
+    <ImageView android:id="@id/write_answer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18.0dip" android:layout_marginBottom="18.0dip" android:src="@drawable/topic_write_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.ss.android.article.base.ui.LoadingFlashView android:id="@id/empty_load_view" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="fill_parent" ss:flash_image_gravity="center" xmlns:ss="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

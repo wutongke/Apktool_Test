@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:topic="http://schemas.android.com/apk/res-auto">
+    <com.ss.android.image.DraweeImageViewTouch android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <com.ss.android.image.AsyncImageView android:id="@id/thumb_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" topic:actualImageScaleType="centerInside" />
+    <com.ss.android.article.common.view.CircularProgressBar android:id="@id/loading_progress" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

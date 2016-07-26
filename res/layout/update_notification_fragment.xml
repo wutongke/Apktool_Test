@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/notification_item_layout" android:background="@color/update_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/update_list" />
+    <TextView android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" style="@style/list_notify_view" />
+    <TextView android:id="@id/notify_recommand_view" android:visibility="gone" android:layout_width="fill_parent" style="@style/list_notify_view" />
+    <TextView android:textSize="@dimen/update_content_empty_textsize" android:textColor="@color/update_content_empty_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/empty_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/update_notification_empty" android:layout_centerInParent="true" />
+</RelativeLayout>

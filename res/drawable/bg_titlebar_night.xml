@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ssxinxian7_night" />
+        </shape>
+    </item>
+    <item android:bottom="1.0px">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ssxinmian4_night" />
+        </shape>
+    </item>
+</layer-list>

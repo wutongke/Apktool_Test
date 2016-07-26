@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/update_activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/change_mobile_tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/change_mobile_num_tip1" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:id="@id/change_mobile_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/change_mobile_num_tip2" android:layout_below="@id/change_mobile_tip1" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/login_box" android:layout_below="@id/change_mobile_tip2" style="@style/mobile_box_multi">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/mobile_frame1" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_centerHorizontal="true">
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/mobile_tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/default_mcc" style="@style/mobile_edit_hit" />
+                        <TextView android:id="@id/divider_line1" style="@style/mobile_box_middle_line" />
+                        <EditText android:layout_gravity="center_vertical" android:id="@id/mobile_input1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/mobile_input_old_hint" android:layout_weight="1.0" android:inputType="number" style="@style/mobile_edit_new" />
+                        <ImageView android:id="@id/clear_mobile1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clear_edit_view" />
+                    </LinearLayout>
+                    <TextView android:id="@id/horizontal_line" style="@style/mobile_box_hori_line" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/mobile_frame2" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                        <TextView android:layout_gravity="center_vertical" android:id="@id/mobile_tip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/default_mcc" style="@style/mobile_edit_hit" />
+                        <TextView android:id="@id/divider_line2" style="@style/mobile_box_middle_line" />
+                        <EditText android:layout_gravity="center_vertical" android:id="@id/mobile_input2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/mobile_input_new_hint" android:layout_weight="1.0" android:inputType="number" style="@style/mobile_edit_new" />
+                        <ImageView android:id="@id/clear_mobile2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/clear_edit_view" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:id="@id/next_btn" android:layout_width="fill_parent" android:text="@string/next" android:layout_below="@id/login_box" style="@style/mobile_btn" />
+            </RelativeLayout>
+        </ScrollView>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</LinearLayout>

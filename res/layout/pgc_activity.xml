@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/title_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/pgc_article_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+</LinearLayout>

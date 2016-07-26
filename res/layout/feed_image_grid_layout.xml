@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/grid_layout_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feed_item_horizontal_margin" android:layout_marginTop="@dimen/feed_title_margin_top" android:layout_marginRight="@dimen/feed_item_horizontal_margin" android:layout_marginBottom="@dimen/feed_large_image_margin_top" android:maxLines="2" android:includeFontPadding="false" style="@style/feed_item_title" />
+    <com.ss.android.article.base.ui.GridImageLayout android:id="@id/grid_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

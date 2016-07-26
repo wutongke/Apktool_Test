@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contents_wrapper" android:background="@drawable/last_read_notify_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_divider" android:background="@color/feed_last_read_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/contents" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/feed_last_read_des" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/feed_last_read_refresh" android:id="@id/refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feed_last_read_refresh" />
+    </LinearLayout>
+    <View android:id="@id/bottom_divider" android:background="@color/feed_last_read_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

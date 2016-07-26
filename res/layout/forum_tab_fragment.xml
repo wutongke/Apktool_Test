@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="@color/ssxinmian2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_bar" android:background="@drawable/bg_titlebar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height">
+        <com.ss.android.topic.view.PagerSlidingTabStrip android:id="@id/tabs" android:layout_centerInParent="true" style="@style/tab_strip.forum" />
+        <ImageView android:id="@id/reply_notify" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/remind_topic" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/add_topic_btn" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/search_topic" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.ss.android.article.base.ui.TagView android:id="@id/update_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="7.0dip" android:layout_alignTop="@id/reply_notify" android:layout_alignRight="@id/reply_notify" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_bar">
+        <com.ss.android.common.ui.view.SSViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/tab_shadow" android:background="@drawable/bg_tab_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

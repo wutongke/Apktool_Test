@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/ql_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/xh_dialog_backgroud" android:layout_width="318.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/my_dialog_top" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/ql_quick_login_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ql_dialog_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/my_dialog_body" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/my_dialog_top">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/ql_quick_login_error" android:id="@id/my_dialog_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="11" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="12.0dip" android:weightSum="2.0" android:layout_alignParentBottom="true">
+                <Button android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/my_dialog_cancel" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:text="@string/ql_cacel" android:layout_weight="1.0" />
+                <Button android:textSize="13.0sp" android:textColor="@color/ql_quick_login_foot_button" android:id="@id/my_dialog_retry" android:background="@drawable/xh_footer_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:text="@string/ql_retry" android:layout_weight="1.0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

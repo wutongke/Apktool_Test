@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/feed_top_search_layout" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/title_bar">
+        <ImageView android:id="@id/top_search_toutiao_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_toutiaologo_new" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/top_search_text_hint_container" android:background="@drawable/base_discover_old_input" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="16.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/feed_top_search_hint" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/title_search" android:singleLine="true" android:maxLength="20" android:drawableLeft="@drawable/search_discover_normal" android:drawablePadding="2.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/category_layout" android:background="@drawable/bg_category_bar" android:layout_width="fill_parent" android:layout_height="@dimen/top_category_height" android:layout_below="@id/feed_top_search_layout">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="@dimen/top_category_height" android:layout_toLeftOf="@id/search_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <com.ss.android.article.base.feature.category.activity.CategoryTabStrip android:id="@id/category_strip" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/top_category_height" />
+        </LinearLayout>
+        <ImageView android:id="@id/icon_category" android:paddingLeft="11.0dip" android:layout_width="@dimen/top_category_width" android:layout_height="@dimen/top_category_height" android:layout_marginBottom="0.5dip" android:src="@drawable/ic_category_expand" android:scaleType="center" android:layout_toLeftOf="@id/search_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/new_category_tip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/ic_new_category_tip_dark" android:layout_toLeftOf="@id/search_icon" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/search_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/white_search_titlebar_selector" android:scaleType="fitCenter" android:layout_toLeftOf="@id/right_anchor" android:layout_centerVertical="true" />
+        <View android:id="@id/right_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider_below_tab_strip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/category_layout" />
+    <com.ss.android.common.ui.view.SSViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/divider_below_tab_strip" />
+    <ImageView android:id="@id/refresh_button" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/feed_refresh_selector" android:layout_alignRight="@id/view_pager" android:layout_alignBottom="@id/view_pager" />
+</merge>

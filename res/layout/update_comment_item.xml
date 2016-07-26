@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:background="@color/update_user_list_item_bg_color" android:paddingLeft="@dimen/dongtai_right_margin" android:paddingRight="@dimen/dongtai_right_margin" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="17.0dip">
+        <ImageView android:id="@id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/horizontal_padding" android:src="@drawable/ic_comment_blue_indicator_normal" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:layout_toRightOf="@id/indicator">
+            <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/avatar" android:padding="0.5dip" android:layout_width="@dimen/update_avatar_size" android:layout_height="@dimen/update_avatar_size" app:placeholderImage="@drawable/default_sdk_login" app:actualImageScaleType="centerCrop" app:backgroundImage="@drawable/update_user_head_bg" app:roundAsCircle="true" app:roundingBorderWidth="0.5dip" app:roundingBorderColor="@color/ssxinxian1" app:roundingBorderPadding="0.5dip" />
+            <ImageView android:id="@id/mark_v" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-3.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/profile_follow_vyellow" android:scaleType="centerInside" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/right_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_toRightOf="@id/avatar_layout">
+            <com.ss.android.article.base.ui.DiggLayout android:id="@id/digg_layout" android:paddingLeft="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:type="commentType" app:childGravity="bottom" app:textGravity="bottom" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <com.ss.android.article.base.ui.PriorityLinearLayout android:id="@id/name_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/digg_layout" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi13" android:ellipsize="end" android:gravity="center|left|top" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" app:pll_measure_priority="0" app:pll_layout_order="0" />
+            </com.ss.android.article.base.ui.PriorityLinearLayout>
+            <com.ss.android.article.base.ui.SpanTextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:id="@id/comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:includeFontPadding="false" android:layout_below="@id/name_layout" android:lineSpacingExtra="6.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/time_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/comment">
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi13" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:includeFontPadding="false" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi13" android:id="@id/reply_or_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/reply_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/comment_arrow_icon1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/margin_stub" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title_layout" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/right_image" android:layout_alignParentRight="true" fresco:actualImageScaleType="fitXY" style="@style/item_image" />
+        <LinearLayout android:gravity="center" android:background="@color/ssxinmian15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/right_image" android:layout_alignBottom="@id/right_image" android:layout_alignParentRight="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/ssxinzi12" android:gravity="center" android:id="@id/right_album_count" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableBottom="@drawable/collect_video_details" android:drawablePadding="0.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_image" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="15.0sp" android:textColor="@color/ssxinzi2" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:maxLines="2" android:singleLine="false" android:layout_alignParentTop="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi5" android:ellipsize="end" android:id="@id/video_tag" android:background="@drawable/related_album_lable_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_below="@id/title" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/video_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_toRightOf="@id/video_tag" android:layout_below="@id/title" android:layout_alignBaseline="@id/video_tag" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/comment_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/video_source" android:layout_below="@id/title" android:layout_alignBaseline="@id/video_tag" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:src="@color/detail_devider_line_bg" />
+</LinearLayout>

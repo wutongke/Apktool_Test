@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.article.base.feature.feed.activity.DislikeRelativeLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/animation_bg_view" android:background="@drawable/feed_action_dialog_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_alignBottom="@id/feed_action_listview" />
+        <ImageView android:id="@id/top_arrow" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5dip" android:src="@drawable/ugc_pop_corner" android:scaleType="center" android:layout_alignParentRight="true" />
+        <ListView android:id="@id/feed_action_listview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_arrow" android:footerDividersEnabled="false" />
+        <RelativeLayout android:id="@id/dislike_above_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/bottom_arrow" />
+        <RelativeLayout android:id="@id/dislike_below_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/top_arrow" />
+        <ImageView android:id="@id/bottom_arrow" android:visibility="gone" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.5dip" android:src="@drawable/ugc_pop_corner_down" android:scaleType="center" android:layout_below="@id/feed_action_listview" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</com.ss.android.article.base.feature.feed.activity.DislikeRelativeLayout>

@@ -1,0 +1,28 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.ss.android.article.news_570.apk
+compressionType: false
+doNotCompress:
+- arsc
+- xml
+- properties
+- apk
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '14'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles:
+  project.clj: '8'
+  com/bytedance/frameworks/plugin/dependency/readme: '8'
+  com/tencent/mm/sdk/platformtools/rep5402863540997075488.tmp: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.1.0
+versionInfo:
+  versionCode: '570'
+  versionName: 5.7.0

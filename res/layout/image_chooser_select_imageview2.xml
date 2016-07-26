@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ss.android.topic.view.SquareRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center" android:id="@id/image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:adjustViewBounds="true" fresco:actualImageScaleType="centerCrop" />
+    <com.bytedance.article.common.utility.view.DrawableCenterTextView android:textSize="15.0sp" android:textColor="@color/baise1" android:gravity="center" android:id="@id/image_checkbox" android:padding="4.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:drawableLeft="@drawable/ic_photo_selected" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</com.ss.android.topic.view.SquareRelativeLayout>

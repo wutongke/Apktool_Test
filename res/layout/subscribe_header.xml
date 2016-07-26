@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/subscribe_layout" android:background="@drawable/bg_subscribe_fragment_list_header" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="15.0sp" android:textColor="@color/subscribe_head_text_color" android:gravity="center_vertical" android:id="@id/subscribe_header" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="@string/add_more_pgc_subscribe" android:drawableLeft="@drawable/addpgc_subscribe" android:drawablePadding="5.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

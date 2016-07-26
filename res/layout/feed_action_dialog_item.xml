@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/feed_action_dialog_item_bg" android:layout_width="fill_parent" android:layout_height="49.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/feed_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:scaleType="center" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/ssxinzi1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/feed_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:singleLine="true" android:layout_toRightOf="@id/feed_action_icon" android:layout_centerVertical="true" />
+    <View android:id="@id/divider_line" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignLeft="@id/feed_action_text" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/rightbackicon_pop_ups_sdk_login" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

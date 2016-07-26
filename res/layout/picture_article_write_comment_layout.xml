@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/picture_article_write_comment_layout" android:background="@color/picture_write_comment_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/commentlist_write_comment_divider" android:background="@color/picture_write_comment_bg_line_color" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/ssxinzi3" android:gravity="center_vertical" android:id="@id/commentlist_write_comment_tv" android:background="@drawable/picture_detail_page_write_comment_tv_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/picture_detail_page_comment_edittext_hint" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

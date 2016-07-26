@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:background="@drawable/action_bg" android:duplicateParentState="false" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="18.0dip" android:scaleType="center" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:ellipsize="end" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/NotificationTitle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/download_success" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/desc">
+            <TextView android:ellipsize="end" android:gravity="center|left" android:id="@id/download_success_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:singleLine="true" style="@style/NotificationText" />
+            <TextView android:ellipsize="end" android:gravity="center|left" android:id="@id/download_success_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/NotificationText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/download_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/desc">
+            <TextView android:textSize="10.0sp" android:ellipsize="end" android:gravity="center|left" android:id="@id/download_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="3.0" style="@style/NotificationText" />
+            <TextView android:textSize="10.0sp" android:ellipsize="end" android:gravity="center|right" android:id="@id/download_status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="2.0" style="@style/NotificationText" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/download_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:max="100" android:layout_below="@id/download_text" style="@style/download_progress_bar" />
+    </RelativeLayout>
+    <TextView android:gravity="center" android:layout_gravity="center|right" android:id="@id/action" android:background="@drawable/action_bg" android:layout_width="55.0dip" android:layout_height="30.0dip" android:layout_marginLeft="18.0dip" android:layout_weight="0.0" style="@style/NotificationTitle" />
+</LinearLayout>

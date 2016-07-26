@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="17.0sp" android:textColor="@color/ssxinzi1" android:id="@id/pgc_user_follow_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:text="@string/pgc_user_follow_hint" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/pgc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/pgc_user_follow_hint">
+        <com.ss.android.article.common.NightModeAsyncImageView android:id="@id/pgc_avatar" android:layout_width="36.0dip" android:layout_height="36.0dip" app:backgroundImage="@drawable/avatar_bg" app:roundAsCircle="true" app:roundingBorderWidth="1.0dip" app:roundingBorderColor="@color/ssxinxian1" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/ssxinzi1" android:id="@id/pgc_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+</RelativeLayout>

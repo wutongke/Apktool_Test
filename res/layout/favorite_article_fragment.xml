@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/article_list_style" />
+    <TextView android:id="@id/empty_notify_view" android:visibility="gone" android:layout_width="fill_parent" style="@style/list_notify_view" />
+    <RelativeLayout android:id="@id/notify_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/notify_view_height" android:layout_below="@id/title_bar">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/notify_view_text" android:layout_width="fill_parent" android:text="@string/toast_dislike_success_anonymous" style="@style/list_notify_view" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/notify_view_cancel_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <View android:layout_gravity="center_vertical" android:id="@id/notify_view_divider" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/notify_view_divider" />
+            <TextView android:id="@id/notify_view_cancel" android:layout_width="wrap_content" android:layout_height="fill_parent" style="@style/list_notify_cancel_btn" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

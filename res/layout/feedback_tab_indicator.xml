@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/indicator_title" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/feedback_tab_title" />
+</LinearLayout>

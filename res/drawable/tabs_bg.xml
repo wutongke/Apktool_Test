@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/ssxinmian3" />
+    <item android:drawable="@color/ssxinxian1" android:bottom="@dimen/tab_bar_line_padding_bottom" />
+</layer-list>

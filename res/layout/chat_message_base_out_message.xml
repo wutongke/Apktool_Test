@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chat_message" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/info_header" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:id="@id/message_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:id="@id/message_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignBaseline="@id/message_name" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/digg_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.ss.android.article.base.ui.DiggLayout android:id="@id/chat_room_digg_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:type="commentType" app:textGravity="bottom" app:dl_txtsize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/chat_message_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/message_text_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/chat_message_text_border">
+            <ImageView android:id="@id/message_text_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:gravity="left" android:id="@id/message_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_toLeftOf="@id/message_text_arrow" android:layout_alignParentLeft="true" android:lineSpacingMultiplier="1.3" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/root_custom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/chat_message_border" />
+    </LinearLayout>
+</LinearLayout>

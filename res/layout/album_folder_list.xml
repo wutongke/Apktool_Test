@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/half_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:background="@drawable/bg_album_list" android:layout_width="fill_parent" android:layout_height="400.0dip" android:divider="@color/ssxinxian1" android:dividerHeight="1.0px" android:layout_alignParentBottom="true" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/ssxinmian4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ss.android.article.base.feature.detail2.widget.DetailTitleBar android:id="@id/title_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentTop="true" />
+    <include android:id="@id/tool_bar" layout="@layout/tool_bar" />
+    <com.ss.android.common.ui.view.SwipeOverlayFrameLayout android:id="@id/swipe_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tool_bar" android:layout_below="@id/title_bar">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ss.android.topic.ugc.UgcDetailScrollView android:id="@id/detail_scroll_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/alt_view" android:background="@color/detail_activity_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.ss.android.article.base.ui.LoadingFlashView android:id="@id/load_flash_view" android:background="@color/ssxinmian4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" ss:flash_image_gravity="center" xmlns:ss="http://schemas.android.com/apk/res-auto" />
+            <RelativeLayout android:id="@id/retry_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:textSize="14.0sp" android:textColor="@color/ssxinzi1" android:layout_gravity="center" android:id="@id/retry_btn" android:background="@drawable/ss_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50.0dip" android:minHeight="25.0dip" android:text="@string/label_retry" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <com.ss.android.article.base.feature.detail2.widget.DeleteView android:id="@id/delete_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </com.ss.android.common.ui.view.SwipeOverlayFrameLayout>
+    <ProgressBar android:id="@id/ss_htmlprogessbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:max="100" android:layout_below="@id/title_bar" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

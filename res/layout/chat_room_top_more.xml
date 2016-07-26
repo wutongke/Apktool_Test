@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chatroom_top_follow" android:background="@drawable/chat_room_top_follow" android:paddingLeft="15.0dip" android:paddingTop="13.0dip" android:paddingRight="15.0dip" android:paddingBottom="13.0dip" android:layout_width="125.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/chatroom_icon_attention" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/ssxinzi8" android:id="@id/top_more_follow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow" />
+    </LinearLayout>
+    <View android:background="#ff666666" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chatroom_top_share" android:background="@drawable/chat_room_top_share" android:paddingLeft="15.0dip" android:paddingTop="13.0dip" android:paddingRight="15.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/topic_icon_white_share_normal" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/ssxinzi8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_message_menu_share" />
+    </LinearLayout>
+</LinearLayout>

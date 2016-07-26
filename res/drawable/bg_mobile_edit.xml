@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-10.0dip" android:top="-10.0dip" android:right="-10.0dip" android:bottom="0.0dip">
+        <shape>
+            <stroke android:width="0.5dip" android:color="@color/login_divider" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

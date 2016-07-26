@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" style="@style/my_page_item_root"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" style="@style/my_page_item_tv" />
+    <com.ss.android.article.base.ui.TagView android:id="@id/tip_count" android:visibility="invisible" android:layout_toRightOf="@id/title" style="@style/my_page_tagview" />
+    <ImageView android:id="@id/arrow" style="@style/my_page_item_right_arrow" />
+    <View android:id="@id/tip_dot" android:background="@drawable/main_tab_dot_bg" android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:layout_alignParentBottom="true" style="@style/my_page_item_divider" />
+</RelativeLayout>

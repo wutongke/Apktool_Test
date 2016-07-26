@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ad_layout" android:paddingTop="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ss.android.article.base.ui.AdjustImageView android:id="@id/ad_image" android:background="@drawable/detail_ad_banner_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/comment_item_margin_horizon" android:layout_marginRight="@dimen/comment_item_margin_horizon" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentTop="true" />
+        <TextView android:id="@id/ad_image_lable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:text="@string/ad_label_info" android:layout_alignRight="@id/ad_image" android:layout_alignBottom="@id/ad_image" style="@style/comment_ad_label" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/ssxinzi3" android:ellipsize="end" android:id="@id/ad_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/comment_item_margin_horizon" android:layout_marginTop="4.0dip" android:layout_marginRight="@dimen/comment_item_margin_horizon" android:singleLine="true" android:layout_below="@id/ad_image" android:layout_alignParentLeft="true" />
+        <View android:id="@id/divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="16.0dip" android:layout_below="@id/ad_desc" />
+    </RelativeLayout>
+</FrameLayout>

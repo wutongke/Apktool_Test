@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_bar" layout="@layout/image_chooser_action_bar" />
+    <GridView android:id="@id/image_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="41.0dip" android:horizontalSpacing="4.0dip" android:verticalSpacing="4.0dip" android:numColumns="4" android:layout_below="@id/title_bar" />
+    <include android:id="@id/album_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout" android:layout_below="@id/title_bar" layout="@layout/album_folder_list" />
+    <RelativeLayout android:id="@id/bottom_layout" android:background="@drawable/imagechooser_bottom_tool_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/album_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_centerVertical="true">
+            <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinheise1_selector" android:gravity="center" android:id="@id/album_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album" android:singleLine="true" android:includeFontPadding="false" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/bg_album_button" android:layout_toRightOf="@id/album_text" android:layout_alignBottom="@id/album_text" />
+        </RelativeLayout>
+        <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinheise1_selector" android:id="@id/show_select_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/color_ssxinheise1_selector" android:gravity="center_vertical" android:id="@id/preview_btn" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="14.0dip" android:text="@string/preview" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:id="@id/bottom_layout_divider" android:background="@color/ssxinxian1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/bottom_layout_divider" />
+</RelativeLayout>
